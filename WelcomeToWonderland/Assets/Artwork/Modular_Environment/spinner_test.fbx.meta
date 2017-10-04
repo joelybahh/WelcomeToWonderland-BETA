@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: b40043b6db380f749905d4602a44bed9
+timeCreated: 1503548767
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: door
+    100002: door 1
+    100004: door 2
+    100006: door1
+    100008: door10
+    100010: door11
+    100012: door12
+    100014: door13
+    100016: door14
+    100018: door15
+    100020: door16
+    100022: door17
+    100024: door18
+    100026: door19
+    100028: door2
+    100030: door20
+    100032: door21
+    100034: door3
+    100036: door4
+    100038: door5
+    100040: door6
+    100042: door7
+    100044: door8
+    100046: door9
+    100048: flipper_1
+    100050: flipper_2
+    100052: flipper_3
+    100054: ring_1
+    100056: ring_2
+    100058: ring_3
+    100060: //RootNode
+    400000: door
+    400002: door 1
+    400004: door 2
+    400006: door1
+    400008: door10
+    400010: door11
+    400012: door12
+    400014: door13
+    400016: door14
+    400018: door15
+    400020: door16
+    400022: door17
+    400024: door18
+    400026: door19
+    400028: door2
+    400030: door20
+    400032: door21
+    400034: door3
+    400036: door4
+    400038: door5
+    400040: door6
+    400042: door7
+    400044: door8
+    400046: door9
+    400048: flipper_1
+    400050: flipper_2
+    400052: flipper_3
+    400054: ring_1
+    400056: ring_2
+    400058: ring_3
+    400060: //RootNode
+    2300000: door
+    2300002: door 1
+    2300004: door 2
+    2300006: door1
+    2300008: door10
+    2300010: door11
+    2300012: door12
+    2300014: door13
+    2300016: door14
+    2300018: door15
+    2300020: door16
+    2300022: door17
+    2300024: door18
+    2300026: door19
+    2300028: door2
+    2300030: door20
+    2300032: door21
+    2300034: door3
+    2300036: door4
+    2300038: door5
+    2300040: door6
+    2300042: door7
+    2300044: door8
+    2300046: door9
+    2300048: flipper_1
+    2300050: flipper_2
+    2300052: flipper_3
+    2300054: ring_1
+    2300056: ring_2
+    2300058: ring_3
+    3300000: door
+    3300002: door 1
+    3300004: door 2
+    3300006: door1
+    3300008: door10
+    3300010: door11
+    3300012: door12
+    3300014: door13
+    3300016: door14
+    3300018: door15
+    3300020: door16
+    3300022: door17
+    3300024: door18
+    3300026: door19
+    3300028: door2
+    3300030: door20
+    3300032: door21
+    3300034: door3
+    3300036: door4
+    3300038: door5
+    3300040: door6
+    3300042: door7
+    3300044: door8
+    3300046: door9
+    3300048: flipper_1
+    3300050: flipper_2
+    3300052: flipper_3
+    3300054: ring_1
+    3300056: ring_2
+    3300058: ring_3
+    4300000: ring_3
+    4300002: door
+    4300004: door1
+    4300006: door2
+    4300008: door3
+    4300010: door4
+    4300012: door5
+    4300014: door6
+    4300016: door7
+    4300018: ring_2
+    4300020: door
+    4300022: door8
+    4300024: door9
+    4300026: door10
+    4300028: door11
+    4300030: door12
+    4300032: door13
+    4300034: door14
+    4300036: ring_1
+    4300038: door
+    4300040: door15
+    4300042: door16
+    4300044: door17
+    4300046: door18
+    4300048: door19
+    4300050: door21
+    4300052: door20
+    4300054: flipper_3
+    4300056: flipper_2
+    4300058: flipper_1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

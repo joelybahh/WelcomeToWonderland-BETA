@@ -1,0 +1,688 @@
+fileFormatVersion: 2
+guid: f74d2109ef5e98a4cb9d0192cdc05d4f
+timeCreated: 1501808549
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: index_1_jnt
+    100004: index_2_jnt
+    100006: index_3_jnt
+    100008: index_end_jnt
+    100010: pinky_1_jnt
+    100012: pinky_2_jnt
+    100014: pinky_3_jnt
+    100016: pinky_4_jnt
+    100018: pinky_end_jnt
+    100020: polySurface5
+    100022: ring_1_jnt
+    100024: ring_2_jnt
+    100026: ring_3_jnt
+    100028: ring_4_jnt
+    100030: ring_end_jnt
+    100032: rude_1_jnt
+    100034: rude_2_jnt
+    100036: rude_3_jnt
+    100038: rude_end_jnt
+    100040: thumb_1_jnt
+    100042: thumb_2_jnt
+    100044: thumb_3_jnt
+    100046: thumb_end_jnt
+    100048: wrist_jnt
+    400000: //RootNode
+    400002: index_1_jnt
+    400004: index_2_jnt
+    400006: index_3_jnt
+    400008: index_end_jnt
+    400010: pinky_1_jnt
+    400012: pinky_2_jnt
+    400014: pinky_3_jnt
+    400016: pinky_4_jnt
+    400018: pinky_end_jnt
+    400020: polySurface5
+    400022: ring_1_jnt
+    400024: ring_2_jnt
+    400026: ring_3_jnt
+    400028: ring_4_jnt
+    400030: ring_end_jnt
+    400032: rude_1_jnt
+    400034: rude_2_jnt
+    400036: rude_3_jnt
+    400038: rude_end_jnt
+    400040: thumb_1_jnt
+    400042: thumb_2_jnt
+    400044: thumb_3_jnt
+    400046: thumb_end_jnt
+    400048: wrist_jnt
+    4300000: polySurface5
+    7400000: OpenToFist
+    7400002: OpenToPoint
+    7400004: PointToFist
+    7400006: Open
+    7400008: Fist
+    7400010: Point
+    7400012: FistToOpen
+    9500000: //RootNode
+    13700000: polySurface5
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: OpenToFist
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 98
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface5
+        weight: 1
+      - path: wrist_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt/index_end_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt/pinky_end_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt/ring_end_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt/rude_end_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt/thumb_end_jnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: OpenToPoint
+      takeName: Take 001
+      firstFrame: 101
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface5
+        weight: 1
+      - path: wrist_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt/index_end_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt/pinky_end_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt/ring_end_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt/rude_end_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt/thumb_end_jnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PointToFist
+      takeName: Take 001
+      firstFrame: 201
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface5
+        weight: 1
+      - path: wrist_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt/index_end_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt/pinky_end_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt/ring_end_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt/rude_end_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt/thumb_end_jnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Open
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface5
+        weight: 1
+      - path: wrist_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt/index_end_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt/pinky_end_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt/ring_end_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt/rude_end_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt/thumb_end_jnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fist
+      takeName: Take 001
+      firstFrame: 98
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface5
+        weight: 1
+      - path: wrist_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt/index_end_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt/pinky_end_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt/ring_end_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt/rude_end_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt/thumb_end_jnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Point
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface5
+        weight: 1
+      - path: wrist_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt/index_end_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt/pinky_end_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt/ring_end_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt/rude_end_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt/thumb_end_jnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FistToOpen
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 98
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: polySurface5
+        weight: 1
+      - path: wrist_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt
+        weight: 1
+      - path: wrist_jnt/index_1_jnt/index_2_jnt/index_3_jnt/index_end_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt
+        weight: 1
+      - path: wrist_jnt/pinky_1_jnt/pinky_2_jnt/pinky_3_jnt/pinky_4_jnt/pinky_end_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt
+        weight: 1
+      - path: wrist_jnt/ring_1_jnt/ring_2_jnt/ring_3_jnt/ring_4_jnt/ring_end_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt
+        weight: 1
+      - path: wrist_jnt/rude_1_jnt/rude_2_jnt/rude_3_jnt/rude_end_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt
+        weight: 1
+      - path: wrist_jnt/thumb_1_jnt/thumb_2_jnt/thumb_3_jnt/thumb_end_jnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

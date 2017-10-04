@@ -1,0 +1,114 @@
+fileFormatVersion: 2
+guid: bd2b039f07a1e2b4d9e7d86752f03db3
+timeCreated: 1505107135
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: CrystalPower_GEO_02
+    100002: CrystalPowerHolder_GEO_02
+    100004: PowerHandCable_GEO_02
+    100006: PowerHandIndicator_GEO_02
+    100008: RightHand_Base_GEO_02
+    100010: RightHand_GEO_02
+    100012: //RootNode
+    400000: CrystalPower_GEO_02
+    400002: CrystalPowerHolder_GEO_02
+    400004: PowerHandCable_GEO_02
+    400006: PowerHandIndicator_GEO_02
+    400008: RightHand_Base_GEO_02
+    400010: RightHand_GEO_02
+    400012: //RootNode
+    2300000: CrystalPower_GEO_02
+    2300002: CrystalPowerHolder_GEO_02
+    2300004: PowerHandCable_GEO_02
+    2300006: PowerHandIndicator_GEO_02
+    2300008: RightHand_Base_GEO_02
+    2300010: RightHand_GEO_02
+    3300000: CrystalPower_GEO_02
+    3300002: CrystalPowerHolder_GEO_02
+    3300004: PowerHandCable_GEO_02
+    3300006: PowerHandIndicator_GEO_02
+    3300008: RightHand_Base_GEO_02
+    3300010: RightHand_GEO_02
+    4300000: RightHand_Base_GEO_02
+    4300002: RightHand_GEO_02
+    4300004: PowerHandIndicator_GEO_02
+    4300006: PowerHandCable_GEO_02
+    4300008: CrystalPower_GEO_02
+    4300010: CrystalPowerHolder_GEO_02
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

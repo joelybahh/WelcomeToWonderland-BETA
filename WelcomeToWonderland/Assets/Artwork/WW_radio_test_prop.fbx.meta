@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: e015779cf97382444bbaea1177bb1c89
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Button_1
+    100002: Button_2
+    100004: Button_3
+    100006: Button_4
+    100008: Button_5
+    100010: Button_6
+    100012: cassette
+    100014: door
+    100016: handle
+    100018: Knob_1
+    100020: Knob_2
+    100022: Knob_3
+    100024: Knob_4
+    100026: knob_5
+    100028: //RootNode
+    400000: Button_1
+    400002: Button_2
+    400004: Button_3
+    400006: Button_4
+    400008: Button_5
+    400010: Button_6
+    400012: cassette
+    400014: door
+    400016: handle
+    400018: Knob_1
+    400020: Knob_2
+    400022: Knob_3
+    400024: Knob_4
+    400026: knob_5
+    400028: //RootNode
+    2300000: Button_1
+    2300002: Button_2
+    2300004: Button_3
+    2300006: Button_4
+    2300008: Button_5
+    2300010: Button_6
+    2300012: cassette
+    2300014: door
+    2300016: handle
+    2300018: Knob_1
+    2300020: Knob_2
+    2300022: Knob_3
+    2300024: Knob_4
+    2300026: knob_5
+    2300028: //RootNode
+    3300000: Button_1
+    3300002: Button_2
+    3300004: Button_3
+    3300006: Button_4
+    3300008: Button_5
+    3300010: Button_6
+    3300012: cassette
+    3300014: door
+    3300016: handle
+    3300018: Knob_1
+    3300020: Knob_2
+    3300022: Knob_3
+    3300024: Knob_4
+    3300026: knob_5
+    3300028: //RootNode
+    4300000: Radio_body
+    4300002: Knob_4
+    4300004: Knob_3
+    4300006: Knob_2
+    4300008: Knob_1
+    4300010: Button_5
+    4300012: Button_4
+    4300014: Button_2
+    4300016: Button_6
+    4300018: Button_1
+    4300020: Button_3
+    4300022: knob_5
+    4300024: handle
+    4300026: door
+    4300028: cassette
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

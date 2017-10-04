@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: 9eb7c5e40f7f48f499746b8abaa34ee4
+timeCreated: 1503641474
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: WaterCoolerBase_GEO
+    100002: WaterCoolerContainer_GEO
+    100004: WaterTap_01
+    100006: WaterTap_02
+    100008: WaterTapHose_01_GEO
+    100010: WaterTapHose_02_GEO
+    100012: WaterTapHousing_01_GEO
+    100014: WaterTapHousing_02_GEO
+    100016: WaterTapLeftSupport_01_GEO
+    100018: WaterTapLeftSupport_02_GEO
+    100020: WaterTapPaddle_01_GEO
+    100022: WaterTapPaddle_02_GEO
+    100024: WaterTapRightSupport_01_GEO
+    100026: WaterTapRightSupport_02_GEO
+    100028: //RootNode
+    400000: WaterCoolerBase_GEO
+    400002: WaterCoolerContainer_GEO
+    400004: WaterTap_01
+    400006: WaterTap_02
+    400008: WaterTapHose_01_GEO
+    400010: WaterTapHose_02_GEO
+    400012: WaterTapHousing_01_GEO
+    400014: WaterTapHousing_02_GEO
+    400016: WaterTapLeftSupport_01_GEO
+    400018: WaterTapLeftSupport_02_GEO
+    400020: WaterTapPaddle_01_GEO
+    400022: WaterTapPaddle_02_GEO
+    400024: WaterTapRightSupport_01_GEO
+    400026: WaterTapRightSupport_02_GEO
+    400028: //RootNode
+    2300000: WaterCoolerBase_GEO
+    2300002: WaterCoolerContainer_GEO
+    2300004: WaterTapHose_01_GEO
+    2300006: WaterTapHose_02_GEO
+    2300008: WaterTapHousing_01_GEO
+    2300010: WaterTapHousing_02_GEO
+    2300012: WaterTapLeftSupport_01_GEO
+    2300014: WaterTapLeftSupport_02_GEO
+    2300016: WaterTapPaddle_01_GEO
+    2300018: WaterTapPaddle_02_GEO
+    2300020: WaterTapRightSupport_01_GEO
+    2300022: WaterTapRightSupport_02_GEO
+    3300000: WaterCoolerBase_GEO
+    3300002: WaterCoolerContainer_GEO
+    3300004: WaterTapHose_01_GEO
+    3300006: WaterTapHose_02_GEO
+    3300008: WaterTapHousing_01_GEO
+    3300010: WaterTapHousing_02_GEO
+    3300012: WaterTapLeftSupport_01_GEO
+    3300014: WaterTapLeftSupport_02_GEO
+    3300016: WaterTapPaddle_01_GEO
+    3300018: WaterTapPaddle_02_GEO
+    3300020: WaterTapRightSupport_01_GEO
+    3300022: WaterTapRightSupport_02_GEO
+    4300000: WaterCoolerContainer_GEO
+    4300002: WaterCoolerBase_GEO
+    4300004: WaterTapHose_01_GEO
+    4300006: WaterTapHousing_01_GEO
+    4300008: WaterTapRightSupport_01_GEO
+    4300010: WaterTapLeftSupport_01_GEO
+    4300012: WaterTapPaddle_01_GEO
+    4300014: WaterTapHose_02_GEO
+    4300016: WaterTapHousing_02_GEO
+    4300018: WaterTapRightSupport_02_GEO
+    4300020: WaterTapLeftSupport_02_GEO
+    4300022: WaterTapPaddle_02_GEO
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

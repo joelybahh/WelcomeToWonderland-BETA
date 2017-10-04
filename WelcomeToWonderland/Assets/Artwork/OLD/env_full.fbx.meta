@@ -1,0 +1,241 @@
+fileFormatVersion: 2
+guid: 36e63b5b60e93224db6cfd44621f876d
+timeCreated: 1502332800
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: group1
+    100004: group2
+    100006: group3
+    100008: group4
+    100010: SE_flatwall_geo
+    100012: SE_flatwall_geo 1
+    100014: SE_flatwall_geo 2
+    100016: SE_flatwall_geo1
+    100018: SE_flatwall_geo1 1
+    100020: SE_flatwall_geo1 2
+    100022: SE_flatwall_geo1 3
+    100024: SE_flatwall_geo2
+    100026: SE_flatwall_geo2 1
+    100028: SE_flatwall_geo2 2
+    100030: SE_flatwall_geo2 3
+    100032: SE_flatwall_geo3
+    100034: SE_flatwall_geo3 1
+    100036: SE_flatwall_geo3 2
+    100038: SE_flatwall_geo4
+    100040: SE_flatwall_geo5
+    100042: SE_flatwall_geo6
+    100044: SE_flatwall_geo7
+    100046: SE_flatwall_geo8
+    100048: SE_flatwall_geo9
+    100050: SE_seg_1_geo
+    100052: SE_seg_1_geo1
+    100054: SE_seg_1_geo2
+    100056: SE_seg_1_geo3
+    100058: SE_seg_1_geo4
+    100060: SE_seg_1_geo5
+    100062: SE_seg_1_geo6
+    100064: SE_seg_1_geo7
+    100066: se_seg_2_geo
+    100068: se_seg_2_geo1
+    100070: se_seg_2_geo2
+    400000: //RootNode
+    400002: group1
+    400004: group2
+    400006: group3
+    400008: group4
+    400010: SE_flatwall_geo
+    400012: SE_flatwall_geo 1
+    400014: SE_flatwall_geo 2
+    400016: SE_flatwall_geo1
+    400018: SE_flatwall_geo1 1
+    400020: SE_flatwall_geo1 2
+    400022: SE_flatwall_geo1 3
+    400024: SE_flatwall_geo2
+    400026: SE_flatwall_geo2 1
+    400028: SE_flatwall_geo2 2
+    400030: SE_flatwall_geo2 3
+    400032: SE_flatwall_geo3
+    400034: SE_flatwall_geo3 1
+    400036: SE_flatwall_geo3 2
+    400038: SE_flatwall_geo4
+    400040: SE_flatwall_geo5
+    400042: SE_flatwall_geo6
+    400044: SE_flatwall_geo7
+    400046: SE_flatwall_geo8
+    400048: SE_flatwall_geo9
+    400050: SE_seg_1_geo
+    400052: SE_seg_1_geo1
+    400054: SE_seg_1_geo2
+    400056: SE_seg_1_geo3
+    400058: SE_seg_1_geo4
+    400060: SE_seg_1_geo5
+    400062: SE_seg_1_geo6
+    400064: SE_seg_1_geo7
+    400066: se_seg_2_geo
+    400068: se_seg_2_geo1
+    400070: se_seg_2_geo2
+    2300000: SE_flatwall_geo
+    2300002: SE_flatwall_geo 1
+    2300004: SE_flatwall_geo 2
+    2300006: SE_flatwall_geo1
+    2300008: SE_flatwall_geo1 1
+    2300010: SE_flatwall_geo1 2
+    2300012: SE_flatwall_geo1 3
+    2300014: SE_flatwall_geo2
+    2300016: SE_flatwall_geo2 1
+    2300018: SE_flatwall_geo2 2
+    2300020: SE_flatwall_geo2 3
+    2300022: SE_flatwall_geo3
+    2300024: SE_flatwall_geo3 1
+    2300026: SE_flatwall_geo3 2
+    2300028: SE_flatwall_geo4
+    2300030: SE_flatwall_geo5
+    2300032: SE_flatwall_geo6
+    2300034: SE_flatwall_geo7
+    2300036: SE_flatwall_geo8
+    2300038: SE_flatwall_geo9
+    2300040: SE_seg_1_geo
+    2300042: SE_seg_1_geo1
+    2300044: SE_seg_1_geo2
+    2300046: SE_seg_1_geo3
+    2300048: SE_seg_1_geo4
+    2300050: SE_seg_1_geo5
+    2300052: SE_seg_1_geo6
+    2300054: SE_seg_1_geo7
+    2300056: se_seg_2_geo
+    2300058: se_seg_2_geo1
+    2300060: se_seg_2_geo2
+    3300000: SE_flatwall_geo
+    3300002: SE_flatwall_geo 1
+    3300004: SE_flatwall_geo 2
+    3300006: SE_flatwall_geo1
+    3300008: SE_flatwall_geo1 1
+    3300010: SE_flatwall_geo1 2
+    3300012: SE_flatwall_geo1 3
+    3300014: SE_flatwall_geo2
+    3300016: SE_flatwall_geo2 1
+    3300018: SE_flatwall_geo2 2
+    3300020: SE_flatwall_geo2 3
+    3300022: SE_flatwall_geo3
+    3300024: SE_flatwall_geo3 1
+    3300026: SE_flatwall_geo3 2
+    3300028: SE_flatwall_geo4
+    3300030: SE_flatwall_geo5
+    3300032: SE_flatwall_geo6
+    3300034: SE_flatwall_geo7
+    3300036: SE_flatwall_geo8
+    3300038: SE_flatwall_geo9
+    3300040: SE_seg_1_geo
+    3300042: SE_seg_1_geo1
+    3300044: SE_seg_1_geo2
+    3300046: SE_seg_1_geo3
+    3300048: SE_seg_1_geo4
+    3300050: SE_seg_1_geo5
+    3300052: SE_seg_1_geo6
+    3300054: SE_seg_1_geo7
+    3300056: se_seg_2_geo
+    3300058: se_seg_2_geo1
+    3300060: se_seg_2_geo2
+    4300000: SE_flatwall_geo2
+    4300002: SE_flatwall_geo3
+    4300004: SE_flatwall_geo1
+    4300006: SE_flatwall_geo5
+    4300008: SE_flatwall_geo2
+    4300010: SE_flatwall_geo3
+    4300012: SE_flatwall_geo
+    4300014: SE_flatwall_geo1
+    4300016: SE_flatwall_geo8
+    4300018: SE_flatwall_geo9
+    4300020: SE_flatwall_geo2
+    4300022: SE_flatwall_geo
+    4300024: SE_flatwall_geo1
+    4300026: SE_flatwall_geo6
+    4300028: SE_flatwall_geo2
+    4300030: SE_flatwall_geo3
+    4300032: SE_flatwall_geo
+    4300034: SE_flatwall_geo1
+    4300036: SE_flatwall_geo4
+    4300038: SE_flatwall_geo7
+    4300040: SE_seg_1_geo
+    4300042: SE_seg_1_geo1
+    4300044: se_seg_2_geo
+    4300046: SE_seg_1_geo2
+    4300048: SE_seg_1_geo3
+    4300050: SE_seg_1_geo4
+    4300052: SE_seg_1_geo5
+    4300054: se_seg_2_geo1
+    4300056: se_seg_2_geo2
+    4300058: SE_seg_1_geo6
+    4300060: SE_seg_1_geo7
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
