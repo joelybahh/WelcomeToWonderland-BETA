@@ -20,6 +20,12 @@ namespace WW.Puzzles {
             private set { m_PuzzleKey = value; }
         }
 
+        public List<int> ButtonIds
+        {
+            get { return m_buttonIds; }
+            set { m_buttonIds = value; }
+        }
+
         public static int m_identifier = 4;
 
         private bool PuzzleCorrect;
@@ -44,6 +50,8 @@ namespace WW.Puzzles {
                 StartCoroutine(IncorrectSequence(1.0f));
                 AudioManager.Instance.PlayVoiceLine(8);
 
+            } else {
+                //if()
             }
             if ( PuzzleCorrect ) CompletePuzzle();
 
@@ -87,11 +95,16 @@ namespace WW.Puzzles {
             }
         }
 
-        private IEnumerator IncorrectSequence(float a_time) {
+        public void CallIncorrectSequence(float a_time)
+        {
+            StartCoroutine(IncorrectSequence(a_time));
+        }
 
-            foreach (StageLightButton slB in m_stageLightButtons) {
-                slB.UnPressable = true;
-            }
+        public IEnumerator IncorrectSequence(float a_time) {
+
+            //foreach (StageLightButton slB in m_stageLightButtons) {
+            //    slB.UnPressable = true;
+            //}
 
             yield return new WaitForSeconds(a_time);
             Debug.Log("reseting");

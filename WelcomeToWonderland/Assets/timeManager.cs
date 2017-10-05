@@ -32,12 +32,12 @@ namespace WW.Managers
 
 
             if ( seconds <= 0 && minutes <= 0 && !PlayerWin ) {
-                ExplosionParticle.Play();
                 s.LoadScene(5, 0);
+                ExplosionParticle.Play();
             }
             else if ( seconds <= 0 && minutes <= 0 && PlayerWin ) {
-                ConfettiParticle.Play();
                 s.LoadScene(18, 0);
+                ConfettiParticle.Play();
             }
             else seconds -= Time.deltaTime;
             if (seconds < 0 && minutes > 0 )

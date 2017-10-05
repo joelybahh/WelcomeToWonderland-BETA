@@ -165,10 +165,14 @@ namespace WW.Puzzles {
                 m_inUse = false;
                 SetState(eSequenceState.FLASHING);
 
+                m_lightPuzzle.SetLightTriggered(false);
+                m_lightPuzzle.ButtonIds = new List<int>();
+
                 foreach (StageLightButton slB in m_lightPuzzle.m_stageLightButtons) {
                     slB.m_buttonLight.SetColor(Color.red);
+                    slB.UnPressable = false;
                 }
-                foreach (FlickSwitch fS in m_lightSwitches) fS.TurnOffFlickSwitch();
+                //foreach (FlickSwitch fS in m_lightSwitches) fS.TurnOffFlickSwitch();
                 foreach (Light l in m_lights) l.enabled = false;
             }
         }
