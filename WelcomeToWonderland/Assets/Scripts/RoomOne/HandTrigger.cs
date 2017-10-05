@@ -11,14 +11,16 @@ public class HandTrigger : MonoBehaviour {
 	void OnTriggerEnter(Collider col) {
         if(col.tag == "PowerGlove") {
             OnEnter.Invoke();
-            
+            DestroyRobot();
+
+
         }
     }
 
     void DestroyRobot() {
         foreach(Rigidbody r in m_robotPieces) {
-           // r.useGravity = true;
-            //r.isKinematic = false;
+            r.useGravity = true;
+            r.isKinematic = false;
         }
     }
 }
