@@ -105,7 +105,11 @@ public class SteamVR_LaserPointer : MonoBehaviour
             
 
         }
-        
+        else {
+            TeleportGizmo.SetActive(false);
+
+        }
+
 
         if (previousContact && previousContact != hit.transform)
         {
