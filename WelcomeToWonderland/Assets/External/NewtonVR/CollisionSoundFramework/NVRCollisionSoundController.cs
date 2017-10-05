@@ -39,7 +39,13 @@ namespace NewtonVR
         public static void Play(NVRCollisionSoundMaterials material, Vector3 position, float impactVolume)
         {
             if (Provider != null)
+            {
+                if (material == NVRCollisionSoundMaterials.tablet)
+                {
+                    impactVolume *= 0.25f;
+                }
                 Provider.Play(material, position, impactVolume);
+            }
         }
     }
 
