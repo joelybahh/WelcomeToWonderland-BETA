@@ -7,9 +7,11 @@ namespace WW.Puzzles.Helper {
         private SpinnerPuzzle m_spinnerPuzzleRef;
         public int minRangeAudio;
         public int maxRangeAudio;
+
         [SerializeField] private NewtonVR.NVRHand m_leftHand;
         [SerializeField] private NewtonVR.NVRHand m_rightHand;
         [SerializeField] GameObject highlight;
+        [SerializeField] GameObject sparks;
         void Start() {
             m_spinnerPuzzleRef = transform.parent.GetComponent<SpinnerPuzzle>();
         }
@@ -19,7 +21,7 @@ namespace WW.Puzzles.Helper {
             if (a_other.tag == "Boomber")
             {
                 int audioID = Random.Range(minRangeAudio, maxRangeAudio);
-                WW.Managers.AudioManager.Instance.PlayVoiceLine(audioID);
+                Managers.AudioManager.Instance.PlayVoiceLine(audioID);
             }
         }
 
@@ -55,6 +57,7 @@ namespace WW.Puzzles.Helper {
             rbRef.useGravity = false;
             gameObject.GetComponent<Renderer>().enabled = false;
             highlight.SetActive(false);
+            sparks.SetActive(false);
         }
     }
 }
