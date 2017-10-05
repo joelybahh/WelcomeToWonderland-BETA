@@ -185,8 +185,8 @@ public class SteamVR_Teleporter : MonoBehaviour
             }
             OnTeleportEnd.Invoke();
 
-        }
         steamVrLaser.enabled  = false;
+        }
     }
 }
 
