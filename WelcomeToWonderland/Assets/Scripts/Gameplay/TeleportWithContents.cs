@@ -15,13 +15,15 @@ namespace WW.Movement {
         private void OnTriggerEnter( Collider col ) {
             Rigidbody rb = col.GetComponent<Rigidbody> ();
             if(rb != null)
-                col.transform.parent = m_parent;
+                if(rb.gameObject.layer != 16)
+                    col.transform.parent = m_parent;
         }
 
         private void OnTriggerExit ( Collider col ) {
             Rigidbody rb = col.GetComponent<Rigidbody> ();
             if (rb != null)
-                col.transform.parent = m_startingParent;
+                if (rb.gameObject.layer != 16)
+                    col.transform.parent = m_startingParent;
         }
     }
 }
