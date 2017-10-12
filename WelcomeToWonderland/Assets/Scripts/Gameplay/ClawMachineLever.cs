@@ -35,21 +35,15 @@ public class ClawMachineLever : MonoBehaviour {
     [Header ("Claw Move Speed")]
     [SerializeField] private float m_clawSpeed;
 
+    float threshold = 14f;
+
     void Update () {
 
+        CheckLeverDirection ();
 
-
-        if(Input.GetKey(KeyCode.W)) {
-            curLeverDir = eLeverDir.FORWARD;
-        }else if (Input.GetKey (KeyCode.A)) {
-            curLeverDir = eLeverDir.LEFT;
-        }else if (Input.GetKey (KeyCode.S)) {
-            curLeverDir = eLeverDir.BACK;
-        }else if (Input.GetKey (KeyCode.D)) {
-            curLeverDir = eLeverDir.RIGHT;
-        } else {
-            curLeverDir = eLeverDir.CENTER;
-        }
+        #if UNITY_EDITOR
+        UpdateDeveloperOveride ();
+        #endif
 
         UpdateCurMovement ();
     }
@@ -77,16 +71,70 @@ public class ClawMachineLever : MonoBehaviour {
         curLeverDir = eLeverDir.NULL;
     }
 
+    private void CheckLeverDirection() {
+        //z,x
+
+        Vector3 eulerAngles = transform.localEulerAngles;
+
+        Debug.Log (eulerAngles + "Z");
+        if(transform.localEulerAngles.z < -threshold) {
+            //LEFT
+            curLeverDir = eLeverDir.LEFT;
+        }
+        if (transform.localEulerAngles.z > threshold) {
+            //RIGHT
+            curLeverDir = eLeverDir.RIGHT;
+        }
+
+        if (transform.localEulerAngles.x < -threshold) {
+            //FORWARD
+            curLeverDir = eLeverDir.FORWARD;
+        }
+        if (transform.localEulerAngles.x > threshold) {
+            //BACK
+            curLeverDir = eLeverDir.BACK;
+        }
+
+        // TODO: FIX INSPECTOR BEING A SHITBAG
+        //float AngleAboutY ( Transform obj ) {
+        //    Vector3 objFwd = obj.forward;
+        //    float angle = Vector3.Angle (objFwd, Vector3.forward);
+        //    float sign = Mathf.Sign (Vector3.Cross (objFwd, Vector3.forward).y);
+        //    return angle * sign;
+        //}
+
+
+        //TODO: FORWARD_LEFT, FORWARD_RIGHT
+    }
+
     private void UpdateLeft() {
-        m_xCarriageRef.position += m_xCarriageRef.right * m_clawSpeed * Time.deltaTime; 
+        if (m_xCarriageRef.localPosition.x <= m_xMax)
+            m_xCarriageRef.position += m_xCarriageRef.right * m_clawSpeed * Time.deltaTime; 
     }
     private void UpdateRight () {
-        m_xCarriageRef.position += -m_xCarriageRef.right * m_clawSpeed * Time.deltaTime;
+        if (m_xCarriageRef.localPosition.x >= m_xMin)
+            m_xCarriageRef.position += -m_xCarriageRef.right * m_clawSpeed * Time.deltaTime;
     }
     private void UpdateForward () {
-        m_zCarriageRef.position += -m_xCarriageRef.forward * m_clawSpeed * Time.deltaTime;
+        if (m_zCarriageRef.localPosition.z >= m_zMin)
+            m_zCarriageRef.position += -m_xCarriageRef.forward * m_clawSpeed * Time.deltaTime;
     }
     private void UpdateBack () {
-        m_zCarriageRef.position += m_xCarriageRef.forward * m_clawSpeed * Time.deltaTime;
+        if (m_zCarriageRef.localPosition.z <= m_zMax)
+            m_zCarriageRef.position += m_xCarriageRef.forward * m_clawSpeed * Time.deltaTime;
+    }
+
+    private void UpdateDeveloperOveride () {
+        if (Input.GetKey (KeyCode.W)) {
+            curLeverDir = eLeverDir.FORWARD;
+        } else if (Input.GetKey (KeyCode.A)) {
+            curLeverDir = eLeverDir.LEFT;
+        } else if (Input.GetKey (KeyCode.S)) {
+            curLeverDir = eLeverDir.BACK;
+        } else if (Input.GetKey (KeyCode.D)) {
+            curLeverDir = eLeverDir.RIGHT;
+        } else {
+            curLeverDir = eLeverDir.CENTER;
+        }
     }
 }
