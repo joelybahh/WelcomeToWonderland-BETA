@@ -11,7 +11,7 @@ namespace WW.Movement {
         public GameObject m_infoText;
 
         private void OnTriggerStay(Collider a_other) {
-            if (a_other.tag != "MainCamera" && a_other.tag != "Player") {
+            if (a_other.tag != "MainCamera" && a_other.tag != "Player" && a_other.tag != "CigarPoint") {
                 //Debug.Log(a_other.name);
                 m_isClipping = true;
                 m_teleRef.CanTeleport = false;
