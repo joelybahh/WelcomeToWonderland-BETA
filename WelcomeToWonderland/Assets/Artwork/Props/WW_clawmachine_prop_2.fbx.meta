@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 2d128ec16887abf4a8ea40d19654a9bd
+timeCreated: 1507790675
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: arcade_button1
+    100002: claw_1
+    100004: claw_2
+    100006: claw_3
+    100008: dropper
+    100010: glass
+    100012: joystick_arcade
+    100014: jstick_arcade_base
+    100016: key_door
+    100018: key_slot_arcade
+    100020: lock
+    100022: polySurface21
+    100024: polySurface24
+    100026: polySurface25
+    100028: polySurface29
+    100030: prizedoor
+    100032: //RootNode
+    100034: x_carriage
+    100036: z_carriage
+    400000: arcade_button1
+    400002: claw_1
+    400004: claw_2
+    400006: claw_3
+    400008: dropper
+    400010: glass
+    400012: joystick_arcade
+    400014: jstick_arcade_base
+    400016: key_door
+    400018: key_slot_arcade
+    400020: lock
+    400022: polySurface21
+    400024: polySurface24
+    400026: polySurface25
+    400028: polySurface29
+    400030: prizedoor
+    400032: //RootNode
+    400034: x_carriage
+    400036: z_carriage
+    2300000: arcade_button1
+    2300002: claw_1
+    2300004: claw_2
+    2300006: claw_3
+    2300008: dropper
+    2300010: glass
+    2300012: joystick_arcade
+    2300014: jstick_arcade_base
+    2300016: key_door
+    2300018: key_slot_arcade
+    2300020: lock
+    2300022: polySurface24
+    2300024: polySurface25
+    2300026: polySurface29
+    2300028: prizedoor
+    2300030: x_carriage
+    2300032: z_carriage
+    3300000: arcade_button1
+    3300002: claw_1
+    3300004: claw_2
+    3300006: claw_3
+    3300008: dropper
+    3300010: glass
+    3300012: joystick_arcade
+    3300014: jstick_arcade_base
+    3300016: key_door
+    3300018: key_slot_arcade
+    3300020: lock
+    3300022: polySurface24
+    3300024: polySurface25
+    3300026: polySurface29
+    3300028: prizedoor
+    3300030: x_carriage
+    3300032: z_carriage
+    4300000: key_door
+    4300002: lock
+    4300004: key_slot_arcade
+    4300006: polySurface25
+    4300008: polySurface29
+    4300010: jstick_arcade_base
+    4300012: joystick_arcade
+    4300014: arcade_button1
+    4300016: glass
+    4300018: prizedoor
+    4300020: x_carriage
+    4300022: z_carriage
+    4300024: dropper
+    4300026: polySurface24
+    4300028: claw_1
+    4300030: claw_2
+    4300032: claw_3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
