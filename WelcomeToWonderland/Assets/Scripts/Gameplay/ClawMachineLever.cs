@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Author: Joel Gabriel    
+/// Desc:   This class is used to handle the entire I/O of the claw machine 
+/// TODO:   The use of a configurable joing
+/// </summary>
 public class ClawMachineLever : MonoBehaviour {
 
     public enum eLeverDir {
@@ -35,17 +40,25 @@ public class ClawMachineLever : MonoBehaviour {
     [Header ("Claw Move Speed")]
     [SerializeField] private float m_clawSpeed;
 
-    float threshold = 14f;
+    [SerializeField] private float m_curEulerX;
+    [SerializeField] private float m_curEulerZ;
+
+    float thresholdMin = 14f;
+    float thresholdMax = 345.5f;
 
     void Update () {
 
         CheckLeverDirection ();
 
         #if UNITY_EDITOR
-        UpdateDeveloperOveride ();
+        //UpdateDeveloperOveride ();
         #endif
 
         UpdateCurMovement ();
+
+        if(LeverCentered()) {
+            curLeverDir = eLeverDir.CENTER;
+        }
     }
 
     /// <summary>
@@ -72,39 +85,51 @@ public class ClawMachineLever : MonoBehaviour {
     }
 
     private void CheckLeverDirection() {
-        //z,x
-
         Vector3 eulerAngles = transform.localEulerAngles;
 
-        Debug.Log (eulerAngles + "Z");
-        if(transform.localEulerAngles.z < -threshold) {
+        m_curEulerX = eulerAngles.x;
+        m_curEulerZ = eulerAngles.z;
+
+        if (JoystickLeft()) {
             //LEFT
             curLeverDir = eLeverDir.LEFT;
         }
-        if (transform.localEulerAngles.z > threshold) {
+        if (JoystickRight()) {
             //RIGHT
             curLeverDir = eLeverDir.RIGHT;
         }
-
-        if (transform.localEulerAngles.x < -threshold) {
+        if (JoystickForward ()) {
             //FORWARD
             curLeverDir = eLeverDir.FORWARD;
         }
-        if (transform.localEulerAngles.x > threshold) {
+        if (JoystickBack ()) {
             //BACK
             curLeverDir = eLeverDir.BACK;
         }
 
-        // TODO: FIX INSPECTOR BEING A SHITBAG
-        //float AngleAboutY ( Transform obj ) {
-        //    Vector3 objFwd = obj.forward;
-        //    float angle = Vector3.Angle (objFwd, Vector3.forward);
-        //    float sign = Mathf.Sign (Vector3.Cross (objFwd, Vector3.forward).y);
-        //    return angle * sign;
+
+        //if (JoystickLeft () && JoystickForward ()) {
+        //    //LEFT FORWARD
+        //    curLeverDir = eLeverDir.FORWARD_LEFT;
+        //}
+        //if (JoystickRight () && JoystickBack ()) {
+        //    //LEFT BACK
+        //    curLeverDir = eLeverDir.BACK_LEFT;
+        //}
+        //if (JoystickForward () && JoystickForward ()) {
+        //    //RIGHT FORWARD
+        //    curLeverDir = eLeverDir.FORWARD_RIGHT;
+        //}
+        //if (JoystickBack () && JoystickBack ()) {
+        //    //RIGH BACK
+        //    curLeverDir = eLeverDir.BACK_RIGHT;
         //}
 
-
-        //TODO: FORWARD_LEFT, FORWARD_RIGHT
+    }
+    private bool LeverCentered() {
+        if (!JoystickLeft () && !JoystickRight () && !JoystickForward () && !JoystickBack ()) {
+            return true;
+        } else return false;
     }
 
     private void UpdateLeft() {
@@ -136,5 +161,30 @@ public class ClawMachineLever : MonoBehaviour {
         } else {
             curLeverDir = eLeverDir.CENTER;
         }
+    }
+
+    private bool JoystickLeft () {
+        if ((m_curEulerZ < 350 && m_curEulerZ > 330) && curLeverDir != eLeverDir.LEFT) {
+            return true;
+        }
+        return false;
+    }
+    private bool JoystickRight() {
+        if (m_curEulerZ > thresholdMin && m_curEulerZ < thresholdMin + 16 && curLeverDir != eLeverDir.RIGHT) {
+            return true;
+        }
+        return false;
+    }
+    private bool JoystickForward () {
+        if ((m_curEulerX < thresholdMax && m_curEulerX > 330) && curLeverDir != eLeverDir.FORWARD) {
+            return true;
+        }
+        return false;
+    }
+    private bool JoystickBack () {
+        if (m_curEulerX > thresholdMin && m_curEulerX < thresholdMin + 16 && curLeverDir != eLeverDir.BACK) {
+            return true;
+        }
+        return false;
     }
 }
