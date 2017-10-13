@@ -43,7 +43,7 @@ namespace WW.Physics {
         }
       
         private void OnCollisionEnter ( Collision collision ) {
-            Debug.Log (collision.relativeVelocity.magnitude);
+           // Debug.Log (collision.relativeVelocity.magnitude);
             
             if ((m_agent != null && !m_agent.enabled) && m_isServiceRobot) {
                 if (collision.relativeVelocity.magnitude >= m_requiredImpactForce) {
