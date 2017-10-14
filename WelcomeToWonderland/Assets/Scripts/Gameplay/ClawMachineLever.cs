@@ -60,8 +60,12 @@ namespace WW.Physics {
         private float m_dropperMinHeight;
         private float m_dropperMaxHeight;
 
+        private float m_clawGrabTimer = 0.0f;
+        private float m_clawGrabTime = 1.35f;
+
         private eMachineState m_curMachineState;
 
+        private bool m_waitComplete;
         private bool m_hasItem;
 
         #endregion
@@ -72,6 +76,7 @@ namespace WW.Physics {
             m_dropperMinHeight = m_dropperMinTransform.position.y;
             m_dropperMaxHeight = m_dropperMaxTransform.localPosition.y;
 
+            m_waitComplete = false;
             m_hasItem = false;
         }
 
@@ -100,7 +105,7 @@ namespace WW.Physics {
         /// <summary>
         /// This is the update loop for when you press the big red button to drop the claw.
         /// </summary>
-        private void UpdateGrabAutomation () {
+        private void UpdateGrabAutomation() {
             /* TODO:
              * LOCK X,Z position, Drop claw down to a set position, once there, set spring to (-15 or 15).
              * Wait 'X' amount of seconds, go up until you reach the topmost position. When you pass half way with the item,
@@ -110,7 +115,7 @@ namespace WW.Physics {
              * to the X position of the dispenser hole zone.
              * once inline re-enable/add the rigidbody, retract the claws, and finally... drop
              */
-            if (m_dropperRef.position.y <= m_dropperMinHeight && !m_hasItem)
+            if ( m_dropperRef.position.y <= m_dropperMinHeight && !m_hasItem )
                 m_dropperRef.position -= Vector3.up * m_clawSpeed * Time.deltaTime;
             else {
                 HingeJoint[] m_joints = m_dropperRef.GetChild (0).GetComponentsInChildren<HingeJoint> ();
@@ -118,29 +123,30 @@ namespace WW.Physics {
                 JointSpring[] m_jointSprings = new JointSpring[3];
 
                 // Loop through and assign the jointSpring info to the newly created array
-                for(int i = 0; i < 3; i++) {
-                    m_jointSprings[i]                   =  m_joints[i].spring;
-                    m_jointSprings[i].spring            =  m_joints[i].spring.spring;
-                    m_jointSprings[i].damper            =  m_joints[i].spring.damper;
-                    m_jointSprings[i].targetPosition    = -15;
+                for ( int i = 0; i < 3; i++ ) {
+                    m_jointSprings[i] = m_joints[i].spring;
+                    m_jointSprings[i].spring = m_joints[i].spring.spring;
+                    m_jointSprings[i].damper = m_joints[i].spring.damper;
+                    m_jointSprings[i].targetPosition = -15;
                 }
 
                 // loop through again to assign the updated information to the real spring joint
-                for (int i = 0; i < 3; i++) {
+                for ( int i = 0; i < 3; i++ ) {
                     m_joints[i].spring = m_jointSprings[i];
                 }
 
-                if (GrabbedItem != null) {
-                    GrabbedItem.isKinematic = true;
-                    GrabbedItem.transform.parent = m_dropperRef;
-                }
+                if ( m_waitComplete ) {
+                    if ( GrabbedItem != null ) {
+                        GrabbedItem.isKinematic = true;
+                        GrabbedItem.transform.parent = m_dropperRef;
+                    }
 
-                if (m_dropperRef.position.y <= m_dropperMaxHeight) {
-                    m_dropperRef.position += Vector3.up * m_clawSpeed * Time.deltaTime;
-                } else {
-                    if (!GoBack ()) {
-                        // Go to center
-                            for (int i = 0; i < 3; i++) {
+                    if ( m_dropperRef.position.y <= m_dropperMaxHeight ) {
+                        m_dropperRef.position += Vector3.up * m_clawSpeed * Time.deltaTime;
+                    } else {
+                        if ( !GoBack() ) {
+                            // Go to center
+                            for ( int i = 0; i < 3; i++ ) {
                                 m_jointSprings[i] = m_joints[i].spring;
                                 m_jointSprings[i].spring = m_joints[i].spring.spring;
                                 m_jointSprings[i].damper = m_joints[i].spring.damper;
@@ -148,21 +154,32 @@ namespace WW.Physics {
                             }
 
                             // loop through again to assign the updated information to the real spring joint
-                            for (int i = 0; i < 3; i++) {
+                            for ( int i = 0; i < 3; i++ ) {
                                 m_joints[i].spring = m_jointSprings[i];
                             }
+
                             m_hasItem = false;
-                            if (GrabbedItem != null) {
+                            if ( GrabbedItem != null ) {
                                 GrabbedItem.isKinematic = false;
                                 GrabbedItem.transform.parent = null;
                                 GrabbedItem = null;
                             }
 
                             m_curMachineState = eMachineState.CONTROLLED;
+                            m_waitComplete = false;
+                        }
+                    }
+                    
+                } else {
+                    m_clawGrabTimer += Time.deltaTime;
+                    if ( m_clawGrabTimer >= m_clawGrabTime ) {
+                        m_waitComplete = true;
+                        m_clawGrabTimer = 0.0f;
                     }
                 }
             }
         }
+        
 
         /// <summary>
         /// This is the update loop if the claw machine is off.
@@ -301,7 +318,7 @@ namespace WW.Physics {
         }
 
         private bool GoBack() {
-            if (m_zCarriageRef.localPosition.z <= m_zMax - 0.17f) {
+            if (m_zCarriageRef.localPosition.z <= m_zMax /*- 0.17f*/) {
                 m_zCarriageRef.position += m_xCarriageRef.forward * m_clawSpeed * Time.deltaTime;
                 return true;
             }
