@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace WW.Physics {
+namespace WW.CustomPhysics {
     /// <summary>
     /// Desc: Pushes any gumballs in the trigger zone, downwards, funelling them out the dispenser.
     /// Author: Joel Gabriel

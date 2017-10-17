@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using WW.Managers;
 
-namespace WW.Physics {
+namespace WW.CustomPhysics {
     /// <summary>
     /// Desc: This class handles the dispensing of gumballs
     /// Author: Joel Gabriel

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using NewtonVR;
 using UnityEngine.Events;
-using WW.Physics;
+using WW.CustomPhysics;
 
 public class ClawMachineButton : MonoBehaviour {
     [Header("Claw Machine Lever Control Reference")]
-    [SerializeField] private ClawMachineLever m_clawMachineRef;
+    [SerializeField] private ClawMachineController m_clawMachineRef;
 
     [Header ("Button Events")]
     [SerializeField] private UnityEvent m_onPressed;

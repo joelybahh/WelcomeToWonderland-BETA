@@ -1,4 +1,4 @@
-﻿using WW.Physics;
+﻿using WW.CustomPhysics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ClawMachineClaw : MonoBehaviour {
 
-    [SerializeField] private ClawMachineLever m_clawMachineLever;
+    [SerializeField] private ClawMachineController m_clawMachineLever;
 
     [SerializeField] private int m_randResult;
 
