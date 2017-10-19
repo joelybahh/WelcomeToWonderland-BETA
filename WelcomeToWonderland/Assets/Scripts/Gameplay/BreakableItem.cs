@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace WW.Physics {
+namespace WW.CustomPhysics {
     /// <summary>
     /// Author: Joel Gabriel
     /// Desc: This class is used for handling the swapping out between damaged states of objects. 

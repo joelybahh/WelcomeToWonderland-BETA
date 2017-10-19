@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace WW.Physics {
+namespace WW.CustomPhysics {
     public class NeedlePhysics : MonoBehaviour {
 
         private HingeJoint m_hinge;
