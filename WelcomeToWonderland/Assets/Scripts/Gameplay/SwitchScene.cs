@@ -30,7 +30,7 @@ public class SwitchScene : MonoBehaviour {
 
     public void LoadScene(int delay, int scene)
     {
-        StartCoroutine(DelayedLoad(5, 1));  
+        StartCoroutine(DelayedLoad(delay, scene));  
 
 
     }

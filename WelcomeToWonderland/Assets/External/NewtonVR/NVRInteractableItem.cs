@@ -321,12 +321,23 @@ namespace NewtonVR
 
             if (OnHovering != null)
             {
+                HighlightObject(true);
                 OnHovering.Invoke();
+            }
+        }
+
+        public void HighlightObject(bool abool)
+        {
+            var cakeslices = GetComponentsInChildren<cakeslice.Outline>();
+            foreach (var o in cakeslices)
+            {
+                o.enabled = abool;
             }
         }
 
         public override void ResetInteractable()
         {
+            HighlightObject(false);
             EndInteraction(null);
             base.ResetInteractable();
         }

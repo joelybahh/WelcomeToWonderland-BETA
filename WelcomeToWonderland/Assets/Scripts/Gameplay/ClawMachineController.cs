@@ -77,6 +77,7 @@ namespace WW.CustomPhysics {
         private float m_clawGrabTime = 1.35f;
 
         private eMachineState m_curMachineState;
+        private eClawXDirection curDir;
 
         private bool m_waitComplete;
         private bool m_hasItem;
@@ -84,10 +85,13 @@ namespace WW.CustomPhysics {
         HingeJoint[]  m_joints;
         JointSpring[] m_jointSprings;
 
+        private Vector3 m_dropperCenterVec;      // x Carriage
+
         #endregion
 
         private void Start() {
             m_curMachineState = m_initalMachineState;
+            curDir = eClawXDirection.NULL;
 
             m_dropperMinHeight = m_dropperMinTransform.position.y;
             m_dropperMaxHeight = m_dropperMaxTransform.localPosition.y;
@@ -97,6 +101,8 @@ namespace WW.CustomPhysics {
 
             m_joints = m_dropperRef.GetChild(0).GetComponentsInChildren<HingeJoint>();
             m_jointSprings = new JointSpring[3];
+
+            m_dropperCenterVec = m_xCarriageRef.position;
         }
 
         private void Update() {
@@ -307,7 +313,7 @@ namespace WW.CustomPhysics {
         /// </summary>
         /// <returns>Returns a bool that returns true when you can move back, and false when you hit the wall</returns>
         private bool GoBack() {
-            if ( m_zCarriageRef.localPosition.z <= m_zMax /*- 0.17f*/) {
+            if ( m_zCarriageRef.localPosition.z <= m_zMax - 0.07f) {
                 m_zCarriageRef.position += m_xCarriageRef.forward * m_clawSpeed * Time.deltaTime;
                 return true;
             }
@@ -323,7 +329,37 @@ namespace WW.CustomPhysics {
              * Otherwise, Get was side from the center we are at, 
              * and move back towards the center. Once we are there return true,
              * otherwise keep returning false */
-            return true;
+
+            Vector3 dir = m_dropperCenterVec - m_xCarriageRef.position;
+            dir.Normalize();
+
+
+
+            if ( dir.x > 0 && curDir == eClawXDirection.NULL ) {
+                // TO THE RIGHT OF CENTER
+                curDir = eClawXDirection.RIGHT;
+            } else if ( dir.x < 0 && curDir == eClawXDirection.NULL ) {
+                // TO THE LEFT OF CENTER
+                curDir = eClawXDirection.LEFT;
+            } else if ( m_xCarriageRef.localPosition.x == 0 ) return true;
+
+            Debug.Log(curDir);
+
+            switch ( curDir ) {
+                case eClawXDirection.LEFT: {
+                    if ( m_xCarriageRef.localPosition.x > 0 ) {
+                        m_xCarriageRef.position -= m_xCarriageRef.right * m_clawSpeed * Time.deltaTime;
+                        return false;
+                    } else return true;
+                }
+                case eClawXDirection.RIGHT: {
+                    if ( m_xCarriageRef.localPosition.x < 0 ) {
+                        m_xCarriageRef.position += m_xCarriageRef.right * m_clawSpeed * Time.deltaTime;
+                        return false;
+                    } else return true;
+                }
+                default: return false;
+            }
         }
 
         /// <summary>
@@ -395,6 +431,7 @@ namespace WW.CustomPhysics {
             }
 
             m_curMachineState = eMachineState.CONTROLLED;
+            curDir = eClawXDirection.NULL;
             m_waitComplete = false;
         }
 
@@ -424,6 +461,12 @@ namespace WW.CustomPhysics {
         CLOSE
     }
 
+    public enum eClawXDirection {
+        LEFT,
+        RIGHT,
+        NULL
+    }
+
     #endregion
-}
+    }
 
