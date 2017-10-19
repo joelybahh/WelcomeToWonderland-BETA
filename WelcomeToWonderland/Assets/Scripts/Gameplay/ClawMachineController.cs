@@ -106,10 +106,11 @@ namespace WW.CustomPhysics {
         }
 
         private void Update() {
+            // The 3 main states of the claw machine
             switch ( m_curMachineState ) {
-                case eMachineState.OFF: UpdateOffState(); break;
-                case eMachineState.GRABBING: UpdateGrabAutomation(); break;
-                case eMachineState.CONTROLLED: UpdateClawControls(); break;
+                case eMachineState.OFF:         UpdateOffState();       break;
+                case eMachineState.GRABBING:    UpdateGrabAutomation(); break;
+                case eMachineState.CONTROLLED:  UpdateClawControls();   break;
             }
         }
 
@@ -195,10 +196,10 @@ namespace WW.CustomPhysics {
             m_curEulerX = eulerAngles.x;
             m_curEulerZ = eulerAngles.z;
 
-            if ( JoystickLeft() ) CurLeverDir = eLeverDir.LEFT;
-            if ( JoystickRight() ) CurLeverDir = eLeverDir.RIGHT;
-            if ( JoystickForward() ) CurLeverDir = eLeverDir.FORWARD;
-            if ( JoystickBack() ) CurLeverDir = eLeverDir.BACK;
+            if ( JoystickLeft() )       CurLeverDir = eLeverDir.LEFT;
+            if ( JoystickRight() )      CurLeverDir = eLeverDir.RIGHT;
+            if ( JoystickForward() )    CurLeverDir = eLeverDir.FORWARD;
+            if ( JoystickBack() )       CurLeverDir = eLeverDir.BACK;
         }
 
         /// <summary>
@@ -207,10 +208,10 @@ namespace WW.CustomPhysics {
         /// </summary>
         private void UpdateCurMovement() {
             switch ( CurLeverDir ) {
-                case eLeverDir.LEFT: UpdateLeft(); break;
-                case eLeverDir.RIGHT: UpdateRight(); break;
-                case eLeverDir.FORWARD: UpdateForward(); break;
-                case eLeverDir.BACK: UpdateBack(); break;
+                case eLeverDir.LEFT:    UpdateLeft();       break;
+                case eLeverDir.RIGHT:   UpdateRight();      break;
+                case eLeverDir.FORWARD: UpdateForward();    break;
+                case eLeverDir.BACK:    UpdateBack();       break;
             }
         }
 
@@ -326,14 +327,15 @@ namespace WW.CustomPhysics {
         /// <returns>true when the claw is recentered, false when its not</returns>
         private bool ReCenter () {
             /* TODO: Firstly check if we are centered, if so return true,
-             * Otherwise, Get was side from the center we are at, 
+             * Otherwise, Get wwhat side, from the center we are at as a unit vector, 
              * and move back towards the center. Once we are there return true,
              * otherwise keep returning false */
 
+            // Get the direction from the carriage x, to the droppers center.
             Vector3 dir = m_dropperCenterVec - m_xCarriageRef.position;
+
+            // Get it as a unit vector
             dir.Normalize();
-
-
 
             if ( dir.x > 0 && curDir == eClawXDirection.NULL ) {
                 // TO THE RIGHT OF CENTER
@@ -342,16 +344,17 @@ namespace WW.CustomPhysics {
                 // TO THE LEFT OF CENTER
                 curDir = eClawXDirection.LEFT;
             } else if ( m_xCarriageRef.localPosition.x == 0 ) return true;
-
-            Debug.Log(curDir);
-
+            
+            // Switches the current direction to determine which way to go in order to re-center the object
             switch ( curDir ) {
+                // GO LEFT WHILE YOU ARENT AT THE CENTER
                 case eClawXDirection.LEFT: {
                     if ( m_xCarriageRef.localPosition.x > 0 ) {
                         m_xCarriageRef.position -= m_xCarriageRef.right * m_clawSpeed * Time.deltaTime;
                         return false;
                     } else return true;
                 }
+                // GO RIGHT WHILE YOU ARENT AT THE CENTER
                 case eClawXDirection.RIGHT: {
                     if ( m_xCarriageRef.localPosition.x < 0 ) {
                         m_xCarriageRef.position += m_xCarriageRef.right * m_clawSpeed * Time.deltaTime;
@@ -381,13 +384,13 @@ namespace WW.CustomPhysics {
         private void UpdateClaw( eClawState a_newClawState ) {
             // Loop through and assign the jointSpring info to the newly created array
             for ( int i = 0; i < 3; i++ ) {
-                m_jointSprings[i] = m_joints[i].spring;
+                m_jointSprings[i]        = m_joints[i].spring;
                 m_jointSprings[i].spring = m_joints[i].spring.spring;
                 m_jointSprings[i].damper = m_joints[i].spring.damper;
 
                 switch ( a_newClawState ) {
                     case eClawState.CLOSE: m_jointSprings[i].targetPosition = -15; break;
-                    case eClawState.OPEN: m_jointSprings[i].targetPosition = 15; break;
+                    case eClawState.OPEN:  m_jointSprings[i].targetPosition = 15;  break;
                 }
             }
 
@@ -403,25 +406,27 @@ namespace WW.CustomPhysics {
         private void GrabItem() {
             // Set the grabbed item to kinematic
             GrabbedItem.isKinematic = true;
+
             // Set its parent to the claw, therefore 'grabbing' the item
-            GrabbedItem.transform.parent = m_dropperRef;
+            GrabbedItem.transform.parent   = m_dropperRef;
+            GrabbedItem.transform.position = new Vector3 (0, GrabbedItem.transform.position.y, 0);
         }
 
         /// <summary>
         /// Drops an item if there is actually one to grab
         /// </summary>
         private void DropItem() {
-            GrabbedItem.isKinematic = false;
+            GrabbedItem.isKinematic      = false;
             GrabbedItem.transform.parent = null;
-            GrabbedItem = null;
+            GrabbedItem                  = null;
         }
 
         /// <summary>
         /// Performs the logic for the final phase of automation, The release.
         /// </summary>
         private void FinalItemRelease() {
-            UpdateClaw(eClawState.OPEN);
 
+            UpdateClaw(eClawState.OPEN);
             m_hasItem = false;
 
             // Check if we actually grabbed something,
@@ -440,8 +445,10 @@ namespace WW.CustomPhysics {
 
     #region public enums
 
+    /// <summary>
+    /// This enum is used to store the current lever direction
+    /// </summary>
     public enum eLeverDir {
-        //\\
         FORWARD,
         BACK,
         LEFT,
@@ -450,17 +457,28 @@ namespace WW.CustomPhysics {
         NULL
     }
 
+    /// <summary>
+    /// The main enum, this stores the current machine state overall. So OFF, AUTOMATION or CONTROLLED
+    /// This is used to determine what logic to upate.
+    /// </summary>
     public enum eMachineState {
         CONTROLLED,
         GRABBING,
         OFF
     }
 
+    /// <summary>
+    /// An enum used to store the open and close state of the claw jaws
+    /// </summary>
     public enum eClawState {
         OPEN,
         CLOSE
     }
 
+    /// <summary>
+    /// An enum used to determine what direction it needs
+    /// to move to recenter
+    /// </summary>
     public enum eClawXDirection {
         LEFT,
         RIGHT,
