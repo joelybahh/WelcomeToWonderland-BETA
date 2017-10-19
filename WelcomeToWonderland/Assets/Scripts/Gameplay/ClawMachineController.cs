@@ -409,7 +409,8 @@ namespace WW.CustomPhysics {
 
             // Set its parent to the claw, therefore 'grabbing' the item
             GrabbedItem.transform.parent   = m_dropperRef;
-            GrabbedItem.transform.position = new Vector3 (0, GrabbedItem.transform.position.y, 0);
+            GrabbedItem.transform.localPosition = new Vector3 (0, GrabbedItem.transform.localPosition.y, 0);
+            GrabbedItem.transform.position = new Vector3 (GrabbedItem.transform.position.x, GrabbedItem.transform.position.y, GrabbedItem.transform.position.z);
         }
 
         /// <summary>
