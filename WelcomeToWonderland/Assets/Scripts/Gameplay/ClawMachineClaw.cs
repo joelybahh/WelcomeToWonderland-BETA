@@ -19,7 +19,7 @@ public class ClawMachineClaw : MonoBehaviour {
         m_randResult = Random.Range (0, 100);
 
         if (m_randResult < m_percentChanceOfGrab) {
-            if (m_clawMachineLever.GrabbedItem == null)
+            if (m_clawMachineLever.GrabbedItem == null && col.transform.tag != "NoInteractionZone")
                 m_clawMachineLever.GrabbedItem = col.GetComponent<Rigidbody> ();
         }
     }
