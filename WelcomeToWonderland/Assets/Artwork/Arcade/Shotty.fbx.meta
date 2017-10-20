@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 87a6a3d2c7ad06442aaffd7f0a6a8c99
+timeCreated: 1508468999
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Barrel1
+    100002: Barrel2
+    100004: Bullet
+    100006: Bullet_01
+    100008: Bullet_02
+    100010: Bullet_03
+    100012: Bullet_04
+    100014: Bullet_05
+    100016: Bullet_06
+    100018: GunBase
+    100020: Holster
+    100022: LaserSight
+    100024: pPipe1
+    100026: pPipe2
+    100028: pPipe3
+    100030: pPipe4
+    100032: pPipe5
+    100034: Pump
+    100036: Shells
+    100038: //RootNode
+    100040: Sight
+    100042: Sight1
+    100044: Sight2
+    100046: Stock
+    100048: Trigger
+    100050: TriggerHold
+    400000: Barrel1
+    400002: Barrel2
+    400004: Bullet
+    400006: Bullet_01
+    400008: Bullet_02
+    400010: Bullet_03
+    400012: Bullet_04
+    400014: Bullet_05
+    400016: Bullet_06
+    400018: GunBase
+    400020: Holster
+    400022: LaserSight
+    400024: pPipe1
+    400026: pPipe2
+    400028: pPipe3
+    400030: pPipe4
+    400032: pPipe5
+    400034: Pump
+    400036: Shells
+    400038: //RootNode
+    400040: Sight
+    400042: Sight1
+    400044: Sight2
+    400046: Stock
+    400048: Trigger
+    400050: TriggerHold
+    2300000: Barrel1
+    2300002: Barrel2
+    2300004: Bullet_01
+    2300006: Bullet_02
+    2300008: Bullet_03
+    2300010: Bullet_04
+    2300012: Bullet_05
+    2300014: Bullet_06
+    2300016: GunBase
+    2300018: LaserSight
+    2300020: pPipe1
+    2300022: pPipe2
+    2300024: pPipe3
+    2300026: pPipe4
+    2300028: pPipe5
+    2300030: Pump
+    2300032: Sight
+    2300034: Sight1
+    2300036: Sight2
+    2300038: Stock
+    2300040: Trigger
+    2300042: TriggerHold
+    3300000: Barrel1
+    3300002: Barrel2
+    3300004: Bullet_01
+    3300006: Bullet_02
+    3300008: Bullet_03
+    3300010: Bullet_04
+    3300012: Bullet_05
+    3300014: Bullet_06
+    3300016: GunBase
+    3300018: LaserSight
+    3300020: pPipe1
+    3300022: pPipe2
+    3300024: pPipe3
+    3300026: pPipe4
+    3300028: pPipe5
+    3300030: Pump
+    3300032: Sight
+    3300034: Sight1
+    3300036: Sight2
+    3300038: Stock
+    3300040: Trigger
+    3300042: TriggerHold
+    4300000: Pump
+    4300002: GunBase
+    4300004: Barrel1
+    4300006: TriggerHold
+    4300008: Barrel2
+    4300010: Sight
+    4300012: Sight1
+    4300014: Trigger
+    4300016: Sight2
+    4300018: Stock
+    4300020: pPipe1
+    4300022: pPipe2
+    4300024: pPipe5
+    4300026: pPipe3
+    4300028: pPipe4
+    4300030: Bullet_01
+    4300032: Bullet_02
+    4300034: Bullet_03
+    4300036: Bullet_04
+    4300038: Bullet_05
+    4300040: Bullet_06
+    4300042: LaserSight
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
