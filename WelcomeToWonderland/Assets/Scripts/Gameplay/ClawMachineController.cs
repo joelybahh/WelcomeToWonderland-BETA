@@ -234,7 +234,7 @@ namespace WW.CustomPhysics {
         /// </summary>
         /// <returns>true if the lever is facing left, false if not</returns>
         private bool JoystickLeft() {
-            if ( ( m_curEulerZ < 350 && m_curEulerZ > 330 ) && CurLeverDir != eLeverDir.LEFT ) {
+            if ( ( m_curEulerZ < 350 && m_curEulerZ > 320 ) && CurLeverDir != eLeverDir.LEFT ) {
                 return true;
             }
             return false;
@@ -256,7 +256,8 @@ namespace WW.CustomPhysics {
         /// </summary>
         /// <returns>true if the lever is facing forward, false if not</returns>
         private bool JoystickForward() {
-            if ( ( m_curEulerX < m_thresholdMax && m_curEulerX > 330 ) && CurLeverDir != eLeverDir.FORWARD ) {
+                                 //345.5
+            if ( ( m_curEulerX < m_thresholdMax && m_curEulerX > 320 ) && CurLeverDir != eLeverDir.FORWARD ) {
                 return true;
             }
             return false;
