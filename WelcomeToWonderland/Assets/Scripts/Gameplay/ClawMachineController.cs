@@ -64,8 +64,11 @@ namespace WW.CustomPhysics {
         #endregion
 
         #region Private Variables
-        private float m_curEulerX;
-        private float m_curEulerZ;
+        [SerializeField] private float m_curEulerX;
+        [SerializeField] private float m_curEulerZ;
+
+        [SerializeField] private UnityEngine.UI.Text m_zText;
+        [SerializeField] private UnityEngine.UI.Text m_xText;
 
         private float m_thresholdMax = 345.5f;
         private float m_thresholdMin = 14f;
@@ -106,6 +109,9 @@ namespace WW.CustomPhysics {
         }
 
         private void Update() {
+            m_zText.text = "CURRENT Z EULER: " + m_curEulerZ;
+            m_xText.text = "CURRENT X EULER: " + m_curEulerX;
+
             // The 3 main states of the claw machine
             switch ( m_curMachineState ) {
                 case eMachineState.OFF:         UpdateOffState();       break;
