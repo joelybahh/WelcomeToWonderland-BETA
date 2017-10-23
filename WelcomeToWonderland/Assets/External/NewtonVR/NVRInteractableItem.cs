@@ -72,7 +72,7 @@ namespace NewtonVR
                     UpdateVelocities();
                 }
             }
-
+            HighlightObject(false);
             AddExternalVelocities();
         }
 

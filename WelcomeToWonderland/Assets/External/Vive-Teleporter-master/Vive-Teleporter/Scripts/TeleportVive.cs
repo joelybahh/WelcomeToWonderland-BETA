@@ -108,6 +108,7 @@ public class TeleportVive : MonoBehaviour {
         }
 
         RoomBorder.enabled = false;
+        enabled = false;
     }
 
     /// \brief Requests the chaperone boundaries of the SteamVR play area.  This doesn't work if you haven't performed
