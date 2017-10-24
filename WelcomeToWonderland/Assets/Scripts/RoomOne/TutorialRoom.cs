@@ -3,50 +3,62 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace WW.Puzzles {
-    public class TutorialRoom : Puzzle {
+    public class TutorialRoom : Puzzle
+    {
 
         [Header("Wall Rigidbody References")]
-        [SerializeField] private Rigidbody m_wallFrontRB;
+        [SerializeField]
+        private Rigidbody m_wallFrontRB;
         [SerializeField] private Rigidbody m_wallLeftRB;
         [SerializeField] private Rigidbody m_wallRightRB;
 
         [Header("Wall Push Direction References")]
-        [SerializeField] private Transform m_wallFrontPushPos;
+        [SerializeField]
+        private Transform m_wallFrontPushPos;
         [SerializeField] private Transform m_wallLeftPushPos;
         [SerializeField] private Transform m_wallRightPushPos;
 
         [Header("Push Forces")]
-        [SerializeField] private float m_wallPushForce = 40;
+        [SerializeField]
+        private float m_wallPushForce = 40;
 
         [Header("Temporary Puzzle Solve")]
-        [SerializeField] private NewtonVR.NVRButton m_triggerZone;
+        [SerializeField]
+        private NewtonVR.NVRButton m_triggerZone;
 
         private bool m_doOnce = true;
         private bool m_hasWaitedDelayTime;
 
         private bool m_hasTeleportGlove = false;
-        public bool HasTeleportGlove {
+        public bool HasTeleportGlove
+        {
             get { return m_hasTeleportGlove; }
             set { m_hasTeleportGlove = value; }
         }
 
-        void Start() {
+        void Start()
+        {
             StartCoroutine(WaitTime(5));
         }
 
-        void Update() {
-            
+        void Update()
+        {
 
-            if ( m_triggerZone.ButtonWasPushed && m_hasWaitedDelayTime) {
+
+            if (m_triggerZone.ButtonWasPushed && m_hasWaitedDelayTime)
+            {
                 Debug.Log("happened");
                 HasTeleportGlove = true;
             }
         }
 
-        void FixedUpdate() {
+        void FixedUpdate()
+        {
             if (!m_doOnce) return;
-            if (m_doOnce) {
-                if (HasTeleportGlove) {
+            if (m_doOnce)
+            {
+                if (HasTeleportGlove)
+                {
 
                     SetupWallRigidbodies();
 
@@ -57,13 +69,16 @@ namespace WW.Puzzles {
 
                     RaycastHit hit;
 
-                    if (UnityEngine.Physics.Raycast(frontRay, out hit, Mathf.Infinity)) {
+                    if (UnityEngine.Physics.Raycast(frontRay, out hit, Mathf.Infinity))
+                    {
                         m_wallFrontRB.AddForceAtPosition(m_wallRightPushPos.forward * m_wallPushForce * Time.fixedDeltaTime, hit.point);
                     }
-                    if (UnityEngine.Physics.Raycast(leftRay, out hit, Mathf.Infinity)) {
+                    if (UnityEngine.Physics.Raycast(leftRay, out hit, Mathf.Infinity))
+                    {
                         m_wallLeftRB.AddForceAtPosition(m_wallLeftPushPos.forward * m_wallPushForce * Time.fixedDeltaTime, hit.point);
                     }
-                    if (UnityEngine.Physics.Raycast(rightRay, out hit, Mathf.Infinity)) {
+                    if (UnityEngine.Physics.Raycast(rightRay, out hit, Mathf.Infinity))
+                    {
                         m_wallRightRB.AddForceAtPosition(m_wallRightPushPos.forward * m_wallPushForce * Time.fixedDeltaTime, hit.point);
                     }
 
@@ -73,7 +88,8 @@ namespace WW.Puzzles {
             }
         }
 
-        private void SetupWallRigidbodies() {
+        private void SetupWallRigidbodies()
+        {
             m_wallFrontRB.isKinematic = false;
             m_wallFrontRB.useGravity = true;
 
@@ -84,7 +100,8 @@ namespace WW.Puzzles {
             m_wallRightRB.useGravity = true;
         }
 
-        private IEnumerator WaitTime(float a_seconds) {
+        private IEnumerator WaitTime(float a_seconds)
+        {
             yield return new WaitForSeconds(a_seconds);
             m_hasWaitedDelayTime = true;
         }
@@ -92,7 +109,7 @@ namespace WW.Puzzles {
         public void Puzzletrigger()
         {
 
-            
+
             CompletePuzzle();
 
         }
@@ -123,5 +140,12 @@ namespace WW.Puzzles {
 
             m_doOnce = false;
         }
+        void SetWallLayer()
+        {
+            m_wallFrontRB.gameObject.layer = 0;
+            m_wallLeftRB.gameObject.layer = 0;
+            m_wallRightRB.gameObject.layer = 0;
+        }
     }
+
 }

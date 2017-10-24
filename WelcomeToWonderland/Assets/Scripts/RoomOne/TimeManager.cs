@@ -14,7 +14,7 @@ namespace WW.Managers
         public float minutes = 1, seconds = 0;
         public Text display;
         public List<Text> LargeScreens = new List<Text>();
-        public ParticleSystem ConfettiParticle;
+        public List<ParticleSystem> ConfettiParticle;
         public ParticleSystem ExplosionParticle;
 
         [HideInInspector] SwitchScene s;
@@ -36,7 +36,11 @@ namespace WW.Managers
             //if winner
             else if ( seconds <= 0 && minutes <= 0 && PlayerWin ) {
                 s.LoadScene(18, 0);
-                ConfettiParticle.Play();
+                foreach (var con in ConfettiParticle)
+                {
+                    con.Play();
+                }
+                    
             }
             else seconds -= Time.deltaTime;
             //countdown a minute
