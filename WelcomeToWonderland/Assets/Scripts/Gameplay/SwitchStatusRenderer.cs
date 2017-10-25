@@ -20,7 +20,7 @@ namespace WW.Interactables.Visual {
 
         private Light[] m_statusLights = new Light[2];
 
-        void Start() {
+        void Awake() {
             m_switch = GetComponent<FlickSwitch>();
             m_renderer = GetComponent<Renderer>();
             for ( int i = 0; i < m_statusObjects.Length; i++ ) {
@@ -29,6 +29,8 @@ namespace WW.Interactables.Visual {
         }
 
         public void SetStatusLight() {
+            if (m_switch == null) m_switch = GetComponent<FlickSwitch> ();
+
             switch ( m_switch.m_switchState ) {
                 case FlickSwitch.eSwitchState.LEFT: {
                     m_statusObjects[0].GetComponent<Renderer>().material = m_greenIndicatorMat;
