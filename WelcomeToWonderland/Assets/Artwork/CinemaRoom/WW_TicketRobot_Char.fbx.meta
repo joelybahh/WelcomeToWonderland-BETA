@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: 7142e0d180cc5e74bbeaabe3d69a5a10
+timeCreated: 1508891631
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: BowTie
+    100002: TicketRobotArm_right
+    100004: TicketRobotRightArm
+    100006: TicketRobotRightArm1
+    100008: TicketRobotRightArm10
+    100010: TicketRobotRightArm11
+    100012: TicketRobotRightArm12
+    100014: TicketRobotRightArm13
+    100016: TicketRobotRightArm14
+    100018: TicketRobotRightArm15
+    100020: TicketRobotRightArm16
+    100022: TicketRobotRightArm17
+    100024: TicketRobotRightArm2
+    100026: TicketRobotRightArm3
+    100028: TicketRobotRightArm4
+    100030: TicketRobotRightArm5
+    100032: TicketRobotRightArm6
+    100034: TicketRobotRightArm7
+    100036: TicketRobotRightArm8
+    100038: TicketRobotRightArm9
+    100040: TicketRobottArmLeft
+    100042: TicketRobottArmLeft 1
+    100044: TicketRobottArmLeft1
+    100046: TicketRobottArmLeft10
+    100048: TicketRobottArmLeft11
+    100050: TicketRobottArmLeft12
+    100052: TicketRobottArmLeft13
+    100054: TicketRobottArmLeft14
+    100056: TicketRobottArmLeft15
+    100058: TicketRobottArmLeft16
+    100060: TicketRobottArmLeft17
+    100062: TicketRobottArmLeft2
+    100064: TicketRobottArmLeft3
+    100066: TicketRobottArmLeft4
+    100068: TicketRobottArmLeft5
+    100070: TicketRobottArmLeft6
+    100072: TicketRobottArmLeft7
+    100074: TicketRobottArmLeft8
+    100076: TicketRobottArmLeft9
+    100078: TopHat
+    100080: //RootNode
+    100082: WW_TicketRobot_Char 1
+    400000: BowTie
+    400002: TicketRobotArm_right
+    400004: TicketRobotRightArm
+    400006: TicketRobotRightArm1
+    400008: TicketRobotRightArm10
+    400010: TicketRobotRightArm11
+    400012: TicketRobotRightArm12
+    400014: TicketRobotRightArm13
+    400016: TicketRobotRightArm14
+    400018: TicketRobotRightArm15
+    400020: TicketRobotRightArm16
+    400022: TicketRobotRightArm17
+    400024: TicketRobotRightArm2
+    400026: TicketRobotRightArm3
+    400028: TicketRobotRightArm4
+    400030: TicketRobotRightArm5
+    400032: TicketRobotRightArm6
+    400034: TicketRobotRightArm7
+    400036: TicketRobotRightArm8
+    400038: TicketRobotRightArm9
+    400040: TicketRobottArmLeft
+    400042: TicketRobottArmLeft 1
+    400044: TicketRobottArmLeft1
+    400046: TicketRobottArmLeft10
+    400048: TicketRobottArmLeft11
+    400050: TicketRobottArmLeft12
+    400052: TicketRobottArmLeft13
+    400054: TicketRobottArmLeft14
+    400056: TicketRobottArmLeft15
+    400058: TicketRobottArmLeft16
+    400060: TicketRobottArmLeft17
+    400062: TicketRobottArmLeft2
+    400064: TicketRobottArmLeft3
+    400066: TicketRobottArmLeft4
+    400068: TicketRobottArmLeft5
+    400070: TicketRobottArmLeft6
+    400072: TicketRobottArmLeft7
+    400074: TicketRobottArmLeft8
+    400076: TicketRobottArmLeft9
+    400078: TopHat
+    400080: //RootNode
+    400082: WW_TicketRobot_Char 1
+    2300000: BowTie
+    2300002: TicketRobotRightArm
+    2300004: TicketRobotRightArm1
+    2300006: TicketRobotRightArm10
+    2300008: TicketRobotRightArm11
+    2300010: TicketRobotRightArm12
+    2300012: TicketRobotRightArm13
+    2300014: TicketRobotRightArm14
+    2300016: TicketRobotRightArm15
+    2300018: TicketRobotRightArm16
+    2300020: TicketRobotRightArm17
+    2300022: TicketRobotRightArm2
+    2300024: TicketRobotRightArm3
+    2300026: TicketRobotRightArm4
+    2300028: TicketRobotRightArm5
+    2300030: TicketRobotRightArm6
+    2300032: TicketRobotRightArm7
+    2300034: TicketRobotRightArm8
+    2300036: TicketRobotRightArm9
+    2300038: TicketRobottArmLeft 1
+    2300040: TicketRobottArmLeft1
+    2300042: TicketRobottArmLeft10
+    2300044: TicketRobottArmLeft11
+    2300046: TicketRobottArmLeft12
+    2300048: TicketRobottArmLeft13
+    2300050: TicketRobottArmLeft14
+    2300052: TicketRobottArmLeft15
+    2300054: TicketRobottArmLeft16
+    2300056: TicketRobottArmLeft17
+    2300058: TicketRobottArmLeft2
+    2300060: TicketRobottArmLeft3
+    2300062: TicketRobottArmLeft4
+    2300064: TicketRobottArmLeft5
+    2300066: TicketRobottArmLeft6
+    2300068: TicketRobottArmLeft7
+    2300070: TicketRobottArmLeft8
+    2300072: TicketRobottArmLeft9
+    2300074: TopHat
+    2300076: WW_TicketRobot_Char 1
+    3300000: BowTie
+    3300002: TicketRobotRightArm
+    3300004: TicketRobotRightArm1
+    3300006: TicketRobotRightArm10
+    3300008: TicketRobotRightArm11
+    3300010: TicketRobotRightArm12
+    3300012: TicketRobotRightArm13
+    3300014: TicketRobotRightArm14
+    3300016: TicketRobotRightArm15
+    3300018: TicketRobotRightArm16
+    3300020: TicketRobotRightArm17
+    3300022: TicketRobotRightArm2
+    3300024: TicketRobotRightArm3
+    3300026: TicketRobotRightArm4
+    3300028: TicketRobotRightArm5
+    3300030: TicketRobotRightArm6
+    3300032: TicketRobotRightArm7
+    3300034: TicketRobotRightArm8
+    3300036: TicketRobotRightArm9
+    3300038: TicketRobottArmLeft 1
+    3300040: TicketRobottArmLeft1
+    3300042: TicketRobottArmLeft10
+    3300044: TicketRobottArmLeft11
+    3300046: TicketRobottArmLeft12
+    3300048: TicketRobottArmLeft13
+    3300050: TicketRobottArmLeft14
+    3300052: TicketRobottArmLeft15
+    3300054: TicketRobottArmLeft16
+    3300056: TicketRobottArmLeft17
+    3300058: TicketRobottArmLeft2
+    3300060: TicketRobottArmLeft3
+    3300062: TicketRobottArmLeft4
+    3300064: TicketRobottArmLeft5
+    3300066: TicketRobottArmLeft6
+    3300068: TicketRobottArmLeft7
+    3300070: TicketRobottArmLeft8
+    3300072: TicketRobottArmLeft9
+    3300074: TopHat
+    3300076: WW_TicketRobot_Char 1
+    4300000: WW_TicketRobot_Char
+    4300002: TicketRobotRightArm
+    4300004: TicketRobotRightArm1
+    4300006: TicketRobotRightArm2
+    4300008: TicketRobotRightArm3
+    4300010: TicketRobotRightArm4
+    4300012: TicketRobotRightArm5
+    4300014: TicketRobotRightArm6
+    4300016: TicketRobotRightArm7
+    4300018: TicketRobotRightArm8
+    4300020: TicketRobotRightArm9
+    4300022: TicketRobotRightArm10
+    4300024: TicketRobotRightArm11
+    4300026: TicketRobotRightArm12
+    4300028: TicketRobotRightArm13
+    4300030: TicketRobotRightArm14
+    4300032: TicketRobotRightArm15
+    4300034: TicketRobotRightArm16
+    4300036: TicketRobotRightArm17
+    4300038: TicketRobottArmLeft
+    4300040: TicketRobottArmLeft1
+    4300042: TicketRobottArmLeft2
+    4300044: TicketRobottArmLeft3
+    4300046: TicketRobottArmLeft4
+    4300048: TicketRobottArmLeft5
+    4300050: TicketRobottArmLeft6
+    4300052: TicketRobottArmLeft7
+    4300054: TicketRobottArmLeft8
+    4300056: TicketRobottArmLeft9
+    4300058: TicketRobottArmLeft10
+    4300060: TicketRobottArmLeft11
+    4300062: TicketRobottArmLeft12
+    4300064: TicketRobottArmLeft13
+    4300066: TicketRobottArmLeft14
+    4300068: TicketRobottArmLeft15
+    4300070: TicketRobottArmLeft16
+    4300072: TicketRobottArmLeft17
+    4300074: BowTie
+    4300076: TopHat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
