@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 9db0a84a2bc5b704d9901dc8bc420964
+timeCreated: 1508904978
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: button_0
+    100002: button_1
+    100004: button_2
+    100006: button_3
+    100008: button_4
+    100010: button_5
+    100012: button_6
+    100014: button_7
+    100016: button_8
+    100018: button_9
+    100020: button_hash
+    100022: button_star
+    100024: button_top_1
+    100026: button_top_2
+    100028: button_top_3
+    100030: button_top_4
+    100032: button_top_5
+    100034: button_top_6
+    100036: phone
+    100038: phone_stand
+    100040: //RootNode
+    400000: button_0
+    400002: button_1
+    400004: button_2
+    400006: button_3
+    400008: button_4
+    400010: button_5
+    400012: button_6
+    400014: button_7
+    400016: button_8
+    400018: button_9
+    400020: button_hash
+    400022: button_star
+    400024: button_top_1
+    400026: button_top_2
+    400028: button_top_3
+    400030: button_top_4
+    400032: button_top_5
+    400034: button_top_6
+    400036: phone
+    400038: phone_stand
+    400040: //RootNode
+    2300000: button_0
+    2300002: button_1
+    2300004: button_2
+    2300006: button_3
+    2300008: button_4
+    2300010: button_5
+    2300012: button_6
+    2300014: button_7
+    2300016: button_8
+    2300018: button_9
+    2300020: button_hash
+    2300022: button_star
+    2300024: button_top_1
+    2300026: button_top_2
+    2300028: button_top_3
+    2300030: button_top_4
+    2300032: button_top_5
+    2300034: button_top_6
+    2300036: phone
+    2300038: phone_stand
+    3300000: button_0
+    3300002: button_1
+    3300004: button_2
+    3300006: button_3
+    3300008: button_4
+    3300010: button_5
+    3300012: button_6
+    3300014: button_7
+    3300016: button_8
+    3300018: button_9
+    3300020: button_hash
+    3300022: button_star
+    3300024: button_top_1
+    3300026: button_top_2
+    3300028: button_top_3
+    3300030: button_top_4
+    3300032: button_top_5
+    3300034: button_top_6
+    3300036: phone
+    3300038: phone_stand
+    4300000: phone_stand
+    4300002: phone
+    4300004: button_6
+    4300006: button_2
+    4300008: button_top_6
+    4300010: button_5
+    4300012: button_4
+    4300014: button_9
+    4300016: button_1
+    4300018: button_star
+    4300020: button_8
+    4300022: button_3
+    4300024: button_0
+    4300026: button_7
+    4300028: button_hash
+    4300030: button_top_5
+    4300032: button_top_3
+    4300034: button_top_1
+    4300036: button_top_4
+    4300038: button_top_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
