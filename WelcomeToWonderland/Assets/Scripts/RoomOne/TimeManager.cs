@@ -6,63 +6,72 @@ using UnityEngine.Events;
 
 namespace WW.Managers
 {
-
+    /// <summary>
+    /// Desc: Manages the game timer for puzzle one, and handles win lose functionality.
+    /// Author: Matthew Jones
+    /// </summary>
     public class TimeManager : MonoBehaviour
     {
-        public static TimeManager Instance;
-        bool PlayerWin = false;
-        public float minutes = 1, seconds = 0;
-        public Text display;
-        public List<Text> LargeScreens = new List<Text>();
-        public List<ParticleSystem> ConfettiParticle;
-        public ParticleSystem ExplosionParticle;
+        public static TimeManager Instance;      
 
-        [HideInInspector] SwitchScene s;
+        [SerializeField] private float m_minutes = 1, m_seconds = 0;
+        [SerializeField] private Text m_display;
+        [SerializeField] private List<Text> m_largeScreens = new List<Text>();
+
+        //[SerializeField] private List<ParticleSystem> m_confettiParticle;
+        [SerializeField] private List<DoOnceParticle> m_confettiParticles;
+
+        [SerializeField] private ParticleSystem m_explosionParticle;
+
+        private SwitchScene m_sceneSwitcher;
+        private bool m_playerWin = false;
 
         void Start()
         {
             Instance = this;
-            s = GetComponent<SwitchScene>();
+            m_sceneSwitcher = GetComponent<SwitchScene>();
         }
 
         // Update is called once per frame
         void Update()
         {
             //if loser
-            if ( seconds <= 0 && minutes <= 0 && !PlayerWin ) {
-                s.LoadScene(5, 0);
-                ExplosionParticle.Play();
+            if ( m_seconds <= 0 && m_minutes <= 0 && !m_playerWin ) {
+                m_sceneSwitcher.LoadScene(5, 0);
+                m_explosionParticle.Play();
             }
             //if winner
-            else if ( seconds <= 0 && minutes <= 0 && PlayerWin ) {
-                s.LoadScene(18, 0);
-                foreach (var con in ConfettiParticle)
-                {
-                    con.Play();
+            else if ( m_seconds <= 0 && m_minutes <= 0 && m_playerWin ) {
+                m_sceneSwitcher.LoadScene(18, 0);
+                foreach (var con in m_confettiParticles)  {
+                    if (!con.hasShot) {
+                        con.m_particle.Play ();
+                        con.hasShot = true;
+                    }
                 }
                     
             }
-            else seconds -= Time.deltaTime;
+            else m_seconds -= Time.deltaTime;
             //countdown a minute
-            if (seconds < 0 && minutes > 0 )
+            if (m_seconds < 0 && m_minutes > 0 )
             {
-                seconds = 60;
-                if (minutes > 0) minutes -= 1;
+                m_seconds = 60;
+                if (m_minutes > 0) m_minutes -= 1;
 
             }
             //call final countdown
-            if (minutes == 0 && (int)seconds == 15)
+            if (m_minutes == 0 && (int)m_seconds == 15)
             {
                 AudioManager.Instance.PlayVoiceLine(36);
             }
-            if(seconds > 10)display.text = (minutes + ":" + (int)seconds);
-            else display.text = (minutes + ":0" + (int)seconds);
+            if(m_seconds > 10)m_display.text = (m_minutes + ":" + (int)m_seconds);
+            else m_display.text = (m_minutes + ":0" + (int)m_seconds);
 
-            if (minutes == 0 && (int)seconds <= 15)
+            if (m_minutes == 0 && (int)m_seconds <= 15)
             {
-                foreach (var t in LargeScreens)
+                foreach (var t in m_largeScreens)
                 {
-                    t.text = display.text;
+                    t.text = m_display.text;
                 }
             }
         }
@@ -73,7 +82,7 @@ namespace WW.Managers
         /// <param name="a">Minutes</param>
         public void SetMinutes(int a)
         {
-            minutes = a;
+            m_minutes = a;
 
         }
 
@@ -83,7 +92,7 @@ namespace WW.Managers
         /// <param name="a">Seconds</param>
         public void SetSeoncds(float a)
         {
-            seconds = a;
+            m_seconds = a;
         }
 
 
@@ -93,7 +102,14 @@ namespace WW.Managers
         /// <param name="aBool">state</param>
         public void SetPlayerWin(bool aBool)
         {
-            PlayerWin = aBool;
+            m_playerWin = aBool;
         }
+    }
+
+    [System.Serializable]
+    public class DoOnceParticle {
+        public ParticleSystem m_particle;
+
+        [HideInInspector] public bool hasShot;
     }
 }
