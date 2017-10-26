@@ -4,6 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace WW.Managers {
+    /// <summary>
+    /// Desc:   This class follows a singleton structure and is
+    ///         used to handle the voice line management of the game.
+    ///         It holds a list of voice lines for each level which can
+    ///         easily be played via public functions.
+    /// Author: Joel Gabriel
+    /// </summary>
     [RequireComponent(typeof(AudioSource))]
     public class AudioManager : MonoBehaviour
     {
