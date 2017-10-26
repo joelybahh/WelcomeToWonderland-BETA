@@ -13,7 +13,7 @@ public class SwitchScene : MonoBehaviour {
         if (button != null)
         {
             if (button.ButtonWasPushed) StartCoroutine(DelayedLoad(1, 1));
-
+            // TODO: ASYNC LOAD TEST!
         }
     }
 
