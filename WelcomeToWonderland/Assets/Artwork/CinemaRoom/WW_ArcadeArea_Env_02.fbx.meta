@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: d8b6c1d240e54d54fa09670efe1742a2
+timeCreated: 1508992857
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: ArcadeWall10m1
+    100002: ArcadeWall10m10
+    100004: ArcadeWall10m11
+    100006: ArcadeWall10m12
+    100008: ArcadeWall10m14
+    100010: ArcadeWall10m2
+    100012: ArcadeWall10m3
+    100014: ArcadeWall10m4
+    100016: ArcadeWall10m5
+    100018: ArcadeWall10m6
+    100020: ArcadeWall10m7
+    100022: ArcadeWall10m8
+    100024: ArcadeWall10m9
+    100026: ArcadeWall5m1
+    100028: ArcadeWall5m2
+    100030: ArcadeWall5m3
+    100032: ArcadeWall5m4
+    100034: group1
+    100036: group2
+    100038: NewGround
+    100040: //RootNode
+    400000: ArcadeWall10m1
+    400002: ArcadeWall10m10
+    400004: ArcadeWall10m11
+    400006: ArcadeWall10m12
+    400008: ArcadeWall10m14
+    400010: ArcadeWall10m2
+    400012: ArcadeWall10m3
+    400014: ArcadeWall10m4
+    400016: ArcadeWall10m5
+    400018: ArcadeWall10m6
+    400020: ArcadeWall10m7
+    400022: ArcadeWall10m8
+    400024: ArcadeWall10m9
+    400026: ArcadeWall5m1
+    400028: ArcadeWall5m2
+    400030: ArcadeWall5m3
+    400032: ArcadeWall5m4
+    400034: group1
+    400036: group2
+    400038: NewGround
+    400040: //RootNode
+    2300000: ArcadeWall10m1
+    2300002: ArcadeWall10m10
+    2300004: ArcadeWall10m11
+    2300006: ArcadeWall10m12
+    2300008: ArcadeWall10m14
+    2300010: ArcadeWall10m2
+    2300012: ArcadeWall10m3
+    2300014: ArcadeWall10m4
+    2300016: ArcadeWall10m5
+    2300018: ArcadeWall10m6
+    2300020: ArcadeWall10m7
+    2300022: ArcadeWall10m8
+    2300024: ArcadeWall10m9
+    2300026: ArcadeWall5m1
+    2300028: ArcadeWall5m2
+    2300030: ArcadeWall5m3
+    2300032: ArcadeWall5m4
+    2300034: NewGround
+    3300000: ArcadeWall10m1
+    3300002: ArcadeWall10m10
+    3300004: ArcadeWall10m11
+    3300006: ArcadeWall10m12
+    3300008: ArcadeWall10m14
+    3300010: ArcadeWall10m2
+    3300012: ArcadeWall10m3
+    3300014: ArcadeWall10m4
+    3300016: ArcadeWall10m5
+    3300018: ArcadeWall10m6
+    3300020: ArcadeWall10m7
+    3300022: ArcadeWall10m8
+    3300024: ArcadeWall10m9
+    3300026: ArcadeWall5m1
+    3300028: ArcadeWall5m2
+    3300030: ArcadeWall5m3
+    3300032: ArcadeWall5m4
+    3300034: NewGround
+    4300000: ArcadeWall10m1
+    4300002: ArcadeWall10m2
+    4300004: ArcadeWall10m10
+    4300006: ArcadeWall10m11
+    4300008: ArcadeWall10m14
+    4300010: NewGround
+    4300012: ArcadeWall10m9
+    4300014: ArcadeWall5m4
+    4300016: ArcadeWall10m8
+    4300018: ArcadeWall5m2
+    4300020: ArcadeWall5m1
+    4300022: ArcadeWall10m7
+    4300024: ArcadeWall10m12
+    4300026: ArcadeWall5m3
+    4300028: ArcadeWall10m6
+    4300030: ArcadeWall10m5
+    4300032: ArcadeWall10m3
+    4300034: ArcadeWall10m4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
