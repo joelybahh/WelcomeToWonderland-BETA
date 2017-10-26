@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 /// <summary>
 /// TODO: NEED TO RESET TO DEFAULT SETTINGS ON CUSTOM LOAD...
@@ -28,6 +30,24 @@ public class ElevatorController : MonoBehaviour {
         LoadLevelByIndex (1);
     }
 
+    void Update () {
+        //Press the space key to start coroutine
+        if (Input.GetKey (KeyCode.Space)) {
+            //Use a coroutine to load the Scene in the background
+            StartCoroutine (LoadYourAsyncScene ());
+        }
+    }
+
+    IEnumerator LoadYourAsyncScene () {
+        // The Application loads the Scene in the background at the same time as the current Scene.
+        //This is particularly good for creating loading screens. You could also load the scene by build //number.
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (1);
+
+        //Wait until the last operation fully loads to return anything
+        while (!asyncLoad.isDone) {
+            yield return null;
+        }
+    }
     /// <summary>
     /// Loads a level defined by the parameter, unloads the previous level
     /// </summary>
@@ -79,3 +99,5 @@ public struct LevelStats {
     public float m_bestTimeToComplete;
     public int m_trophiesEarned;
 }
+
+

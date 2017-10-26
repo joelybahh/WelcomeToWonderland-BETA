@@ -32,8 +32,7 @@ namespace WW.Interactables {
 
         public bool startLeft = false;
         public bool isFlicker = false;
-
-        private bool doOnce = true; //HACK: fix
+        
         public eSwitchState m_switchState;
 
         void Awake() {
@@ -59,7 +58,6 @@ namespace WW.Interactables {
         }
 
         void Update() {
-            //LateStart ();
 
             currentRot = transform.rotation.eulerAngles.y;
             UpdateSwitchLimits();
@@ -106,28 +104,6 @@ namespace WW.Interactables {
             else m_spring.targetPosition = m_max - 1;
 
             m_switchJoint.spring = m_spring;
-        }
-
-        private void LateStart() {
-            if (doOnce) {
-                if (startLeft) {
-                    transform.rotation = new Quaternion(transform.rotation.x, 39, transform.rotation.z, 1);
-                    m_spring.targetPosition = m_max;
-                    m_switchJoint.spring = m_spring;
-
-                    m_switchState = eSwitchState.LEFT;
-                    m_LeftON.Invoke();
-                    doOnce = false;
-                } else {
-                    transform.rotation = new Quaternion (transform.rotation.x, -39, transform.rotation.z, 1);
-                    m_spring.targetPosition = m_min;
-                    m_switchJoint.spring = m_spring;
-
-                    m_switchState = eSwitchState.RIGHT;
-                    m_RightOFF.Invoke();
-                    doOnce = false;
-                }
-            }
         }
     }
 }
