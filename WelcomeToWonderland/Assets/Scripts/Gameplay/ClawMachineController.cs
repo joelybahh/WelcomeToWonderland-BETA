@@ -183,9 +183,7 @@ namespace WW.CustomPhysics {
         /// This is the update loop if the claw machine is off.
         /// </summary>
         private void UpdateOffState() {
-            /* TODO:
-             * Wait and check for the required stage to be 'PASSED' 
-             */
+            /* TODO: Wait and check for the required stage to be 'PASSED'*/
         }
 
         #endregion
@@ -333,11 +331,6 @@ namespace WW.CustomPhysics {
         /// </summary>
         /// <returns>true when the claw is recentered, false when its not</returns>
         private bool ReCenter () {
-            /* TODO: Firstly check if we are centered, if so return true,
-             * Otherwise, Get wwhat side, from the center we are at as a unit vector, 
-             * and move back towards the center. Once we are there return true,
-             * otherwise keep returning false */
-
             // Get the direction from the carriage x, to the droppers center.
             Vector3 dir = m_dropperCenterVec - m_xCarriageRef.position;
 

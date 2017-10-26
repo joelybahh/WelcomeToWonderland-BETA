@@ -32,20 +32,32 @@ namespace WW.Interactables {
 
         public bool startLeft = false;
         public bool isFlicker = false;
+        
+        public eSwitchState m_switchState;
 
-        private bool doOnce = true; //HACK: fix
-        public eSwitchState m_switchState = eSwitchState.RIGHT;
-
-        void Start() {
+        void Awake() {
             m_switchJoint = GetComponent<HingeJoint>();
             m_spring = m_switchJoint.spring;
             m_max = m_switchJoint.limits.max;
             m_min = m_switchJoint.limits.min;
             m_switchOn = 0;
+
+            if (startLeft) {
+                m_spring.targetPosition = m_max - 1;
+                m_switchJoint.spring = m_spring;
+
+                m_switchState = eSwitchState.LEFT;
+                m_LeftON.Invoke ();
+            } else {
+                m_spring.targetPosition = m_min;
+                m_switchJoint.spring = m_spring;
+                
+                m_switchState = eSwitchState.RIGHT;
+                m_RightOFF.Invoke ();
+            }
         }
 
         void Update() {
-            LateStart();
 
             currentRot = transform.rotation.eulerAngles.y;
             UpdateSwitchLimits();
@@ -53,9 +65,7 @@ namespace WW.Interactables {
                 case eSwitchState.LEFT: CheckForSwitchOff(); break;
                 case eSwitchState.RIGHT: CheckForSwitchOn(); break;
                     
-            }
-
-            
+            }           
         }
 
         public void TurnOffFlickSwitch() {
@@ -94,20 +104,6 @@ namespace WW.Interactables {
             else m_spring.targetPosition = m_max - 1;
 
             m_switchJoint.spring = m_spring;
-        }
-
-        private void LateStart() {
-            if (doOnce) {
-                if (startLeft) {
-                    transform.rotation = new Quaternion(transform.rotation.x, 39, transform.rotation.z, 1);
-                    m_switchState = eSwitchState.LEFT;
-                    m_LeftON.Invoke();
-                    doOnce = false;
-                } else {
-                    m_RightOFF.Invoke();
-                    doOnce = false;
-                }
-            }
         }
     }
 }
