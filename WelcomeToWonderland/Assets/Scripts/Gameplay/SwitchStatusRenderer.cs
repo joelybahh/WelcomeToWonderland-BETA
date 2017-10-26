@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WW.CustomPhysics;
 
 namespace WW.Interactables.Visual {
     public class SwitchStatusRenderer : MonoBehaviour {
