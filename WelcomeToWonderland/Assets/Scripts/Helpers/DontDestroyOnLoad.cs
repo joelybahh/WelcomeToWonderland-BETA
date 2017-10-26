@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DontDestroyOnLoad : MonoBehaviour {
-    
-	void Awake () {
-        DontDestroyOnLoad (transform.gameObject);
+namespace WW.Helpers {
+    public class DontDestroyOnLoad : MonoBehaviour {
 
+        void Awake () {
+            DontDestroyOnLoad (transform.gameObject);
+
+        }
     }
 }
