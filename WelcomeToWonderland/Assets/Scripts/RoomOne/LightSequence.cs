@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using WW.Interactables;
+using WW.CustomPhysics;
 
 namespace WW.Puzzles {
     /// <summary>

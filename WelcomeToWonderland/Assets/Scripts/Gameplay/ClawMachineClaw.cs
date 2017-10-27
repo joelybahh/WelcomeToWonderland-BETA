@@ -1,26 +1,37 @@
-﻿using WW.CustomPhysics;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
-public class ClawMachineClaw : MonoBehaviour {
+namespace WW.CustomPhysics {
+    /// <summary>
+    /// Desc: This class is used to handle the grab logic/physics
+    ///       in relation to grabbing the item with the claw.
+    ///       It simply checks, using trigger enter, if something
+    ///       has entered the zone (which is a small circle in the center
+    ///       of the claw). If it has, check if we are going to be
+    ///       nice enough to have it succeed (Just like a real claw machine).
+    ///       
+    /// Author: Joel Gabriel
+    /// </summary>
+    public class ClawMachineClaw : MonoBehaviour {
 
-    [SerializeField] private ClawMachineController m_clawMachineLever;
+        [SerializeField] private ClawMachineController m_clawMachineController;
+        [SerializeField] private int m_randResult;      
+        [SerializeField] [Range (0, 100)] private int m_percentChanceOfGrab;
 
-    [SerializeField] private int m_randResult;
+        private void OnTriggerEnter ( Collider col ) {
+            // Let the claw machine controller know that there is an item in the zone.
+            m_clawMachineController.HasItem = true;
 
-    [Range(0,100)]
-    [SerializeField] private int m_percentChanceOfGrab;
+            // Set the random result int to be a number between 0, 100.
+            m_randResult = Random.Range (0, 100);
 
-    private void OnTriggerEnter(Collider col) {
-        m_clawMachineLever.HasItem = true;
-
-        m_randResult = Random.Range (0, 100);
-
-        if (m_randResult < m_percentChanceOfGrab) {
-            if (m_clawMachineLever.GrabbedItem == null && col.transform.tag != "NoInteractionZone")
-                m_clawMachineLever.GrabbedItem = col.GetComponent<Rigidbody> ();
+            // If we are less than the percent chance of grab (eg 70%, if the number is less than 70).
+            if (m_randResult < m_percentChanceOfGrab) {
+                // Check what we are grabbing is actually something it can pickup.
+                if (m_clawMachineController.GrabbedItem == null && col.transform.tag != "NoInteractionZone")
+                    // Give the claw machine controller the grabbed item.
+                    m_clawMachineController.GrabbedItem = col.GetComponent<Rigidbody> ();
+            }
         }
     }
 }
