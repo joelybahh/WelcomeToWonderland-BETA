@@ -28,8 +28,7 @@ namespace WW.AI {
         float m_nextNodeDelay = 0.0f;
 
         [Header("Pathfinding Behaviour Settings")]
-        [SerializeField]
-        ePathingBehaviour m_pathingBehaviour = ePathingBehaviour.LOOPING;
+        [SerializeField] ePathingBehaviour m_pathingBehaviour = ePathingBehaviour.LOOPING;
 
         [Header("AI Manager Override")]
         [SerializeField]
@@ -113,7 +112,7 @@ namespace WW.AI {
                     // get a reference to the next waypoint
                     Transform newTarget = m_path.GetNextWaypoint(ref m_pathIndex, m_pathingBehaviour, ref m_movingForward);
                     // if that reference happens to be null, we reached the end, so STOP_AT_END and return
-                    if ( newTarget == null ) { return; m_isStoppedAtEnd = true; }
+                    if ( newTarget == null ) { m_isStoppedAtEnd = true; return; }
                     // otherwise simply setup its new destination
                     else {
                         m_agent.SetDestination(newTarget.position);
