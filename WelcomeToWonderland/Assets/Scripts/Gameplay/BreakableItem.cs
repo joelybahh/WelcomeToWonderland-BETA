@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,6 +11,7 @@ namespace WW.CustomPhysics {
     /// and an easy way to update them.
     /// </summary>
     public class BreakableItem : MonoBehaviour {
+
         #region Serialized Variables
         [Header ("Impact Force Settings")]
         [SerializeField] private float m_requiredImpactForce;
@@ -24,6 +26,8 @@ namespace WW.CustomPhysics {
         private List<GameObject> m_brokenPrefabs;
         private NavMeshAgent m_agent;
         private int m_currentIndex = 0;
+
+        private bool m_hasWaitedAFrame = true;
 
         #endregion
 
@@ -64,23 +68,42 @@ namespace WW.CustomPhysics {
         /// Goes to the next 'damage' state, and updates the art asset accordingly 
         /// </summary>
         private void GoToNextDamageState () {
-            m_currentIndex++;
+            if (m_hasWaitedAFrame) {
+                m_currentIndex++;
 
-            // Check we are at an index that doesn't exeed the count.
-            if (m_currentIndex > m_brokenPrefabs.Count - 1) {
-                // TODO: DESTROY GAME OBJECT, TRIGGER PARTICLE EFFECT?
-                return;
-            }
-
-            // Set the new state to active
-            m_brokenPrefabs[m_currentIndex].SetActive (true);
-
-            // Loop through and set the old one to inactive
-            for (int i = 0; i < m_brokenPrefabs.Count; i++) {
-                if (i != m_currentIndex) {
-                    m_brokenPrefabs[i].SetActive (false);
+                // Check we are at an index that doesn't exeed the count.
+                if (m_currentIndex > m_brokenPrefabs.Count - 1) {
+                    // TODO: DESTROY GAME OBJECT, TRIGGER PARTICLE EFFECT?
+                    return;
                 }
+
+                // Set the new state to active
+                m_brokenPrefabs[m_currentIndex].SetActive (true);
+
+                // Loop through and set the old one to inactive
+                for (int i = 0; i < m_brokenPrefabs.Count; i++) {
+                    if (i != m_currentIndex) {
+                        m_brokenPrefabs[i].SetActive (false);
+                    }
+                }
+
+                // We have no longer waited a frame, so set it to false
+                m_hasWaitedAFrame = false;
+
+                // Wait a frame
+                StartCoroutine (WaitAFrame ());
             }
+        }
+
+        /// <summary>
+        /// This method simply sets a boolean to true at the end of the frame.
+        /// This was to ensure it only does the breakable item check, after atleast 
+        /// a single frame has passed since the last 'break'
+        /// </summary>
+        /// <returns>The end of frame</returns>
+        private IEnumerator WaitAFrame() {
+            yield return new WaitForEndOfFrame ();
+            m_hasWaitedAFrame = true;
         }
 
         #endregion
