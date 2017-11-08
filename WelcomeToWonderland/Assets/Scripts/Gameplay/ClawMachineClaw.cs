@@ -20,7 +20,11 @@ namespace WW.CustomPhysics {
 
         private void OnTriggerEnter ( Collider col ) {
             // Let the claw machine controller know that there is an item in the zone.
-            m_clawMachineController.HasItem = true;
+            if (col.tag != "NoInteractionZone") {
+                m_clawMachineController.HasItem = true;
+            }
+
+            Debug.Log (col.tag);
 
             // Set the random result int to be a number between 0, 100.
             m_randResult = Random.Range (0, 100);
