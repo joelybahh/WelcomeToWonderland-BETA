@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 
 /// <summary>
-/// TODO: NEED TO RESET TO DEFAULT SETTINGS ON CUSTOM LOAD...
+/// TODO: FIX! This is getting re-done
 /// </summary>
 public class ElevatorController : MonoBehaviour {
 
