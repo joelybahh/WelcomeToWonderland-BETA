@@ -337,26 +337,26 @@ namespace WW.CustomPhysics {
             // Get it as a unit vector
             dir.Normalize();
 
-            if ( dir.z > 0 && curDir == eClawXDirection.NULL ) {
+            if ( dir.z < 0 && curDir == eClawXDirection.NULL ) {
                 // TO THE RIGHT OF CENTER
                 curDir = eClawXDirection.RIGHT;
-            } else if ( dir.z < 0 && curDir == eClawXDirection.NULL ) {
+            } else if ( dir.z > 0 && curDir == eClawXDirection.NULL ) {
                 // TO THE LEFT OF CENTER
                 curDir = eClawXDirection.LEFT;
-            } else if ( m_xCarriageRef.localPosition.x == 0 ) return true;
+            } else if ( m_xCarriageRef.localPosition.z == 0 ) return true;
             
             // Switches the current direction to determine which way to go in order to re-center the object
             switch ( curDir ) {
                 // GO LEFT WHILE YOU ARENT AT THE CENTER
                 case eClawXDirection.LEFT: {
-                    if ( m_xCarriageRef.localPosition.z > 0 ) {
+                    if ( m_xCarriageRef.localPosition.x > 0 ) {
                         m_xCarriageRef.position -= m_xCarriageRef.right * m_clawSpeed * Time.deltaTime;
                         return false;
                     } else return true;
                 }
                 // GO RIGHT WHILE YOU ARENT AT THE CENTER
                 case eClawXDirection.RIGHT: {
-                    if ( m_xCarriageRef.localPosition.z < 0 ) {
+                    if ( m_xCarriageRef.localPosition.x < 0 ) {
                         m_xCarriageRef.position += m_xCarriageRef.right * m_clawSpeed * Time.deltaTime;
                         return false;
                     } else return true;
