@@ -5,12 +5,12 @@ using UnityEngine;
 namespace WW.Puzzles {
     /// <summary>
     /// Author: Joel Gabriel
-    /// Desc:   This class is used to handle the CardSwipe logic/puzzle. 
+    /// Desc:   This class is used to handle the CardSwipe/Tap logic/puzzle. 
     ///         It correctly updates the puzzle completion status, and utilises
     ///         the PayPad class to correctly set the display on the screen, based
     ///         off the data from this script.
     /// </summary>
-    public class CardSwipe : Puzzle {
+    public class PayCard : Puzzle {
 
         #region Serialized Variables
 
@@ -68,6 +68,12 @@ namespace WW.Puzzles {
                 m_hasEntered = true;
                 m_collider.material = m_swipePhysMat;
             }
+
+            if (col.tag.Equals ("Tap")) {
+                m_hasEntered = true;
+                m_hasExited = true;
+            }
+
 
             // if we go through the exit zone, and we have entered the first zone previously, 
             // has exited is now true.

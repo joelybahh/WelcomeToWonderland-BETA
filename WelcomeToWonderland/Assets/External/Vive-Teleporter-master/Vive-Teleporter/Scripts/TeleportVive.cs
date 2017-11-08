@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using Valve.VR;
 
 [AddComponentMenu("Vive Teleporter/Vive Teleporter")]
@@ -41,6 +42,11 @@ public class TeleportVive : MonoBehaviour {
     [Tooltip("Array of SteamVR controllers that may used to select a teleport destination.")]
     public SteamVR_TrackedObject[] Controllers;
     private SteamVR_TrackedObject ActiveController;
+
+    [Space()]
+    [Header("Teleport Events")]
+    public UnityEvent OnTeleportStart;
+    public UnityEvent OnTeleportEnd;
 
     /// Indicates the current use of teleportation.
     /// None: The player is not using teleportation right now
@@ -177,6 +183,10 @@ public class TeleportVive : MonoBehaviour {
                     Vector3 offset = OriginTransform.position - HeadTransform.position;
                     offset.y = 0;
                     OriginTransform.position = Pointer.SelectedPoint + offset;
+
+                    // TODO: TELEPORT END
+                    OnTeleportEnd.Invoke ();
+
                 }
 
                 TeleportTimeMarker = Time.time;
@@ -199,14 +209,16 @@ public class TeleportVive : MonoBehaviour {
                 // If the user has decided to teleport (ie lets go of touchpad) then remove all visual indicators
                 // related to selecting things and actually teleport
                 // If the user has decided to cancel (ie squeezes grip button) then remove visual indicators and do nothing
-                if (shouldTeleport && Pointer.PointOnNavMesh)
-                {
+                if (shouldTeleport && Pointer.PointOnNavMesh) {
                     // Begin teleport sequence
                     CurrentTeleportState = TeleportState.Teleporting;
+                    // TODO: TELEPORT START
+                    OnTeleportStart.Invoke ();
                     TeleportTimeMarker = Time.time;
-                }
-                else
+                } else {
                     CurrentTeleportState = TeleportState.None;
+                    OnTeleportEnd.Invoke ();
+                }
                 
                 // Reset active controller, disable pointer, disable visual indicators
                 ActiveController = null;

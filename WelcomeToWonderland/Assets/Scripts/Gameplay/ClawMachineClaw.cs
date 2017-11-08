@@ -19,18 +19,28 @@ namespace WW.CustomPhysics {
         [SerializeField] [Range (0, 100)] private int m_percentChanceOfGrab;
 
         private void OnTriggerEnter ( Collider col ) {
-            // Let the claw machine controller know that there is an item in the zone.
-            m_clawMachineController.HasItem = true;
+            // HACK: massive conditional check, pretty ugly but gets the job done
+            if (col.tag != "NoInteractionZone" && 
+                col.tag != "HatAttach" && 
+                col.tag != "Player" &&
+                col.tag != "CigarPoint" &&
+                col.tag != "FacialFeature") 
+            {
+                // Let the claw machine controller know that there is an item in the zone.
+                m_clawMachineController.HasItem = true;
 
-            // Set the random result int to be a number between 0, 100.
-            m_randResult = Random.Range (0, 100);
+                Debug.Log (col.tag);
 
-            // If we are less than the percent chance of grab (eg 70%, if the number is less than 70).
-            if (m_randResult < m_percentChanceOfGrab) {
-                // Check what we are grabbing is actually something it can pickup.
-                if (m_clawMachineController.GrabbedItem == null && col.transform.tag != "NoInteractionZone")
-                    // Give the claw machine controller the grabbed item.
-                    m_clawMachineController.GrabbedItem = col.GetComponent<Rigidbody> ();
+                // Set the random result int to be a number between 0, 100.
+                m_randResult = Random.Range (0, 100);
+
+                // If we are less than the percent chance of grab (eg 70%, if the number is less than 70).
+                if (m_randResult < m_percentChanceOfGrab) {
+                    // Check what we are grabbing is actually something it can pickup.
+                    if (m_clawMachineController.GrabbedItem == null)
+                        // Give the claw machine controller the grabbed item.
+                        m_clawMachineController.GrabbedItem = col.GetComponent<Rigidbody> ();
+                }
             }
         }
     }
