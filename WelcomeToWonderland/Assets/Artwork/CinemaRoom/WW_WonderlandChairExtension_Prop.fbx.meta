@@ -1,46 +1,17 @@
 fileFormatVersion: 2
-guid: 931008e22d7486342be49c7934b48551
-timeCreated: 1510098592
+guid: 89456e7f606552146af0779e3013f966
+timeCreated: 1510110202
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Stage_geo
+    100000: WonderlandsChairTable
     100002: //RootNode
-    100004: hallway
-    100006: StageHallway
-    100008: StageHallway1
-    100010: StageHallway2
-    100012: StageHallway3
-    100014: StageHallway4
-    100016: StageWalls
-    400000: Stage_geo
+    400000: WonderlandsChairTable
     400002: //RootNode
-    400004: hallway
-    400006: StageHallway
-    400008: StageHallway1
-    400010: StageHallway2
-    400012: StageHallway3
-    400014: StageHallway4
-    400016: StageWalls
-    2300000: Stage_geo
-    2300002: StageHallway
-    2300004: StageHallway1
-    2300006: StageHallway2
-    2300008: StageHallway3
-    2300010: StageHallway4
-    3300000: Stage_geo
-    3300002: StageHallway
-    3300004: StageHallway1
-    3300006: StageHallway2
-    3300008: StageHallway3
-    3300010: StageHallway4
-    4300000: Stage_geo
-    4300002: StageHallway
-    4300004: StageHallway4
-    4300006: StageHallway2
-    4300008: StageHallway3
-    4300010: StageHallway1
+    2300000: WonderlandsChairTable
+    3300000: WonderlandsChairTable
+    4300000: WonderlandsChairTable
   materials:
     importMaterials: 1
     materialName: 0
