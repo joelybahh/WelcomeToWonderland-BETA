@@ -73,9 +73,45 @@ namespace WW.Puzzles {
             }
         }
 
+        /// <summary>
+        /// FIXME: Gross method, quick and easy
+        /// This method simply swaps out the active screen visuals depending on the
+        /// passed in enum.
+        /// </summary>
+        /// <param name="a_textToShow">The text you wish to change too</param>
+        public void UpdateCurText ( int a_textToShow ) {
+            eCurText text = (eCurText)a_textToShow;
+            switch (text) {
+                case eCurText.DEFAULT:
+                    m_defaultTextRef.SetActive (true);
+                    m_accessGrantedRef.SetActive (false);
+                    m_accessDeniedRef.SetActive (false);
+                    m_invalidSwipeRef.SetActive (false);
+                    break;
+                case eCurText.DENIED:
+                    m_invalidSwipeRef.SetActive (false);
+                    m_accessGrantedRef.SetActive (false);
+                    m_accessDeniedRef.SetActive (true);
+                    m_defaultTextRef.SetActive (false);
+                    break;
+                case eCurText.GRANTED:
+                    m_invalidSwipeRef.SetActive (false);
+                    m_accessGrantedRef.SetActive (true);
+                    m_accessDeniedRef.SetActive (false);
+                    m_defaultTextRef.SetActive (false);
+                    break;
+                case eCurText.INVALID:
+                    m_invalidSwipeRef.SetActive (true);
+                    m_accessGrantedRef.SetActive (false);
+                    m_accessDeniedRef.SetActive (false);
+                    m_defaultTextRef.SetActive (false);
+                    break;
+            }
+        }
+
         #endregion
     }
-
+    
     public enum eCurText {
         GRANTED,
         DENIED,
