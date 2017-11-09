@@ -75,5 +75,9 @@ namespace NewtonVR
             AttachedItem = null;
             AttachedPoint = null;
         }
+
+        public void SetCanDrop(bool aBool) {
+            canDrop = aBool;
+        }
     }
 }
