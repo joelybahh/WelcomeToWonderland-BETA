@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 3abd86c942144e641a47dc6f5396b32a
+timeCreated: 1510198472
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: hallway
+    100002: Stage
+    100004: Stage_geo
+    100006: Stage_geo1
+    100008: Stage_geo2
+    100010: StageCurve
+    100012: StageHallway1
+    100014: StageHallway10
+    100016: StageHallway10 1
+    100018: StageHallway11
+    100020: StageHallway11 1
+    100022: StageHallway12
+    100024: StageHallway12 1
+    100026: StageHallway13
+    100028: StageHallway13 1
+    100030: StageHallway14
+    100032: StageHallway2
+    100034: StageHallway3
+    100036: StageHallway9
+    100038: StageWall
+    100040: StageWall1
+    100042: StageWalls
+    100044: Walkway
+    100046: Walkway1
+    100048: //RootNode
+    400000: hallway
+    400002: Stage
+    400004: Stage_geo
+    400006: Stage_geo1
+    400008: Stage_geo2
+    400010: StageCurve
+    400012: StageHallway1
+    400014: StageHallway10
+    400016: StageHallway10 1
+    400018: StageHallway11
+    400020: StageHallway11 1
+    400022: StageHallway12
+    400024: StageHallway12 1
+    400026: StageHallway13
+    400028: StageHallway13 1
+    400030: StageHallway14
+    400032: StageHallway2
+    400034: StageHallway3
+    400036: StageHallway9
+    400038: StageWall
+    400040: StageWall1
+    400042: StageWalls
+    400044: Walkway
+    400046: Walkway1
+    400048: //RootNode
+    2300000: Stage
+    2300002: Stage_geo
+    2300004: Stage_geo1
+    2300006: Stage_geo2
+    2300008: StageCurve
+    2300010: StageHallway1
+    2300012: StageHallway10
+    2300014: StageHallway10 1
+    2300016: StageHallway11
+    2300018: StageHallway11 1
+    2300020: StageHallway12
+    2300022: StageHallway12 1
+    2300024: StageHallway13
+    2300026: StageHallway13 1
+    2300028: StageHallway14
+    2300030: StageHallway2
+    2300032: StageHallway3
+    2300034: StageWall
+    2300036: StageWall1
+    3300000: Stage
+    3300002: Stage_geo
+    3300004: Stage_geo1
+    3300006: Stage_geo2
+    3300008: StageCurve
+    3300010: StageHallway1
+    3300012: StageHallway10
+    3300014: StageHallway10 1
+    3300016: StageHallway11
+    3300018: StageHallway11 1
+    3300020: StageHallway12
+    3300022: StageHallway12 1
+    3300024: StageHallway13
+    3300026: StageHallway13 1
+    3300028: StageHallway14
+    3300030: StageHallway2
+    3300032: StageHallway3
+    3300034: StageWall
+    3300036: StageWall1
+    4300000: StageCurve
+    4300002: StageWall
+    4300004: StageWall1
+    4300006: StageHallway12
+    4300008: StageHallway11
+    4300010: StageHallway10
+    4300012: StageHallway13
+    4300014: Stage_geo
+    4300016: StageHallway2
+    4300018: StageHallway3
+    4300020: StageHallway1
+    4300022: StageHallway12
+    4300024: StageHallway11
+    4300026: StageHallway10
+    4300028: StageHallway13
+    4300030: StageHallway14
+    4300032: Stage_geo1
+    4300034: Stage_geo2
+    4300036: Stage
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
