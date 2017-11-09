@@ -15,7 +15,7 @@ namespace NewtonVR
         public float PullRange = 0.2f;
         public float AttachRange = 0.01f;
         public float DropDistance = 0.1f;
-
+        public bool canDrop = false;
         public bool MatchRotation = true;
 
         protected virtual void OnTriggerStay(Collider col)
@@ -51,7 +51,7 @@ namespace NewtonVR
         {
             float distance = Vector3.Distance(AttachedPoint.transform.position, this.transform.position);
 
-            if (distance > DropDistance)
+            if (distance > DropDistance && canDrop)
             {
                 Detach();
             }
