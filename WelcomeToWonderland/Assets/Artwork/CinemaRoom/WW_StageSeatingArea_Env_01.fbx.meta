@@ -18,20 +18,6 @@ ModelImporter:
     100020: StageHallway6
     100022: StageHallway7
     100024: StageHallway9
-    100026: StageCurve
-    100028: StageHallway10
-    100030: StageHallway10 1
-    100032: StageHallway11
-    100034: StageHallway11 1
-    100036: StageHallway12
-    100038: StageHallway12 1
-    100040: StageHallway13
-    100042: StageHallway13 1
-    100044: StageHallway14
-    100046: StageWall
-    100048: StageWall1
-    100050: Walkway
-    100052: Walkway1
     400000: Stage_geo
     400002: //RootNode
     400004: hallway
@@ -45,20 +31,6 @@ ModelImporter:
     400020: StageHallway6
     400022: StageHallway7
     400024: StageHallway9
-    400026: StageCurve
-    400028: StageHallway10
-    400030: StageHallway10 1
-    400032: StageHallway11
-    400034: StageHallway11 1
-    400036: StageHallway12
-    400038: StageHallway12 1
-    400040: StageHallway13
-    400042: StageHallway13 1
-    400044: StageHallway14
-    400046: StageWall
-    400048: StageWall1
-    400050: Walkway
-    400052: Walkway1
     2300000: Stage_geo
     2300002: StageHallway
     2300004: StageHallway1
@@ -69,18 +41,6 @@ ModelImporter:
     2300014: StageHallway6
     2300016: StageHallway7
     2300018: StageHallway9
-    2300020: StageCurve
-    2300022: StageHallway10
-    2300024: StageHallway10 1
-    2300026: StageHallway11
-    2300028: StageHallway11 1
-    2300030: StageHallway12
-    2300032: StageHallway12 1
-    2300034: StageHallway13
-    2300036: StageHallway13 1
-    2300038: StageHallway14
-    2300040: StageWall
-    2300042: StageWall1
     3300000: Stage_geo
     3300002: StageHallway
     3300004: StageHallway1
@@ -91,18 +51,6 @@ ModelImporter:
     3300014: StageHallway6
     3300016: StageHallway7
     3300018: StageHallway9
-    3300020: StageCurve
-    3300022: StageHallway10
-    3300024: StageHallway10 1
-    3300026: StageHallway11
-    3300028: StageHallway11 1
-    3300030: StageHallway12
-    3300032: StageHallway12 1
-    3300034: StageHallway13
-    3300036: StageHallway13 1
-    3300038: StageHallway14
-    3300040: StageWall
-    3300042: StageWall1
     4300000: Stage_geo
     4300002: StageHallway
     4300004: StageHallway4
@@ -113,18 +61,6 @@ ModelImporter:
     4300014: StageHallway6
     4300016: StageHallway7
     4300018: StageHallway5
-    4300020: StageCurve
-    4300022: StageWall
-    4300024: StageWall1
-    4300026: StageHallway12
-    4300028: StageHallway11
-    4300030: StageHallway10
-    4300032: StageHallway13
-    4300034: StageHallway12
-    4300036: StageHallway11
-    4300038: StageHallway10
-    4300040: StageHallway13
-    4300042: StageHallway14
   materials:
     importMaterials: 1
     materialName: 0

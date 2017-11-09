@@ -40,5 +40,8 @@ public class CigarLightPoint : MonoBehaviour
                 }
             }
         }
+
+        
+
     }
 }
