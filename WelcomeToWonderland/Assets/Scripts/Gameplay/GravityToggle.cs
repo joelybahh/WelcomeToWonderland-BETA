@@ -14,6 +14,7 @@ namespace WW {
         [SerializeField]
         private NVRLever m_control;
 
+
         [Header("Gravity Force Offset")]
         [SerializeField]
         private float m_minForce = 8.0f;

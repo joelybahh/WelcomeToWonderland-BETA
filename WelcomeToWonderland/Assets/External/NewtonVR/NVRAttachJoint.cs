@@ -76,8 +76,9 @@ namespace NewtonVR
             AttachedPoint = null;
         }
 
-        public void SetCanDrop(bool aBool) {
-            canDrop = aBool;
+        public void SetCurrentCigarActive(bool a_state) {
+            NVRInteractableItem itemRef = AttachedItem; 
+            if (itemRef != null) AttachedItem.gameObject.SetActive (a_state);
         }
     }
 }
