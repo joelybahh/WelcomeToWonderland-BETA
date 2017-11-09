@@ -146,6 +146,10 @@ namespace WW.Puzzles {
             m_wallLeftRB.gameObject.layer = 0;
             m_wallRightRB.gameObject.layer = 0;
         }
+
+        public void OverridePuzzleComplete() {
+            CompletePuzzle ();
+        }
     }
 
 }

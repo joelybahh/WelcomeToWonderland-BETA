@@ -24,7 +24,8 @@ namespace WW.CustomPhysics {
                 col.tag != "HatAttach" && 
                 col.tag != "Player" &&
                 col.tag != "CigarPoint" &&
-                col.tag != "FacialFeature") 
+                col.tag != "FacialFeature" &&
+                col.tag != "MainCamera") 
             {
                 // Let the claw machine controller know that there is an item in the zone.
                 m_clawMachineController.HasItem = true;

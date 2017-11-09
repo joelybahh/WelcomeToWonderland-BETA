@@ -10,23 +10,18 @@ namespace NewtonVR.Example
         public Transform FirePoint;
 
         public Vector3 BulletForce = new Vector3(0, 0, 250);
-        public ShotgunPump pump;
-        private bool canFire;
+
         public override void UseButtonDown()
         {
             base.UseButtonDown();
-            if (pump == null) canFire = true;
-            else { canFire = pump.pumped; pump.pumped = false; }
-            if (canFire)
-            {
-                GameObject bullet = Instantiate(BulletPrefab);
-                bullet.transform.position = FirePoint.position;
-                bullet.transform.forward = FirePoint.forward;
 
-                bullet.GetComponent<Rigidbody>().AddRelativeForce(BulletForce);
+            GameObject bullet = GameObject.Instantiate(BulletPrefab);
+            bullet.transform.position = FirePoint.position;
+            bullet.transform.forward = FirePoint.forward;
 
-                AttachedHand.TriggerHapticPulse(500);
-            }
+            bullet.GetComponent<Rigidbody>().AddRelativeForce(BulletForce);
+
+            AttachedHand.TriggerHapticPulse(500);
         }
     }
 }
