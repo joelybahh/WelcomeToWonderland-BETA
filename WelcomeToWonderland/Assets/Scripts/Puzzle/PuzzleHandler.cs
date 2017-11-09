@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 namespace WW.Puzzles {
+    [System.Serializable]
     public class PuzzleHandler : MonoBehaviour {
         [SerializeField]
         List<Puzzle> m_puzzleTriggers;
