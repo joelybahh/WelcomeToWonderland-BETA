@@ -23,7 +23,7 @@ public class ScreenManipulator : MonoBehaviour {
         if (aBool)
         {
             m_timerScreen.enabled = true;
-            m_timerScreen.GetComponentInChildren<Text>().color = Color.red;
+            m_timerScreen.GetComponentInChildren<Text>().color = Color.black;
             m_AngryScreen.GetComponentInChildren<Text>().text = "⋋_⋌";
         }
         if (!aBool) m_timerScreen.enabled = false;

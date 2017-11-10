@@ -79,7 +79,8 @@ namespace WW.Puzzles {
         /// passed in enum.
         /// </summary>
         /// <param name="a_textToShow">The text you wish to change too</param>
-        public void UpdateCurText ( int a_textToShow ) {
+        public void UpdateCurText ( int a_textToShow ) 
+            {
             eCurText text = (eCurText)a_textToShow;
             switch (text) {
                 case eCurText.DEFAULT:
