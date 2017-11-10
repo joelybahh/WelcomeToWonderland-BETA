@@ -109,9 +109,6 @@ namespace WW.CustomPhysics {
         }
 
         private void Update() {
-            m_zText.text = "CURRENT Z EULER: " + m_curEulerZ;
-            m_xText.text = "CURRENT X EULER: " + m_curEulerX;
-
             // The 3 main states of the claw machine
             switch ( m_curMachineState ) {
                 case eMachineState.OFF:         UpdateOffState();       break;

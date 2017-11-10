@@ -14,70 +14,49 @@ public class ElevatorController : MonoBehaviour {
     private int m_activeLevelIndex;
 
     private void Start () {
-        for(int i = 0; i < m_level.Count; i++) {
-            if (m_level[i].m_isActiveScene) {
-                m_activeLevelIndex = i;
-                break;
-            }
-
-            if(i == m_level.Count-1) {
-                m_activeLevelIndex = 0;
-                m_level[0].m_isActiveScene = true;
-            }
-        }
-
-        LoadLevel ();
-        LoadLevelByIndex (1);
+        SetupInitScene ();
     }
 
     void Update () {
         //Press the space key to start coroutine
         if (Input.GetKey (KeyCode.Space)) {
             //Use a coroutine to load the Scene in the background
-            StartCoroutine (LoadYourAsyncScene ());
+            StartCoroutine (
+                LoadYourAsyncScene (
+                    NextScene()));
         }
     }
 
-    IEnumerator LoadYourAsyncScene () {
+    IEnumerator LoadYourAsyncScene (int a_sceneIndex) {
         // The Application loads the Scene in the background at the same time as the current Scene.
-        //This is particularly good for creating loading screens. You could also load the scene by build //number.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (1);
+        // This is particularly good for creating loading screens. You could also load the scene by build //number.
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (a_sceneIndex);
 
-        //Wait until the last operation fully loads to return anything
+        // Wait until the last operation fully loads to return anything
         while (!asyncLoad.isDone) {
             yield return null;
         }
     }
-    /// <summary>
-    /// Loads a level defined by the parameter, unloads the previous level
-    /// </summary>
-    /// <param name="a_levelIndex">new level to load index</param>
-    public void LoadLevelByIndex(int a_levelIndex) {
-        UnloadLevel ();
 
-        m_activeLevelIndex = a_levelIndex;
+    private void SetupInitScene() {
+        for (int i = 0; i < m_level.Count; i++) {
+            if (m_level[i].m_isActiveScene) {
+                m_activeLevelIndex = i;
+                break;
+            }
 
-        LoadLevel ();
-    }
-
-    /// <summary>
-    /// Loads in a level based on the current active index
-    /// </summary>
-    /// <returns>The loop delay</returns>
-    private void LoadLevel() {
-        for(int i = 0; i < m_level[m_activeLevelIndex].m_levelItemsToLoad.Count; i++) {
-            m_level[m_activeLevelIndex].m_levelItemsToLoad[i].SetActive (true);
-        }       
-    }
-
-    /// <summary>
-    /// Unloads in a level based on the current active index
-    /// </summary>
-    /// <returns>The loop delay</returns>
-    private void UnloadLevel () {
-        for (int i = 0; i < m_level[m_activeLevelIndex].m_levelItemsToLoad.Count; i++) {
-            m_level[m_activeLevelIndex].m_levelItemsToLoad[i].SetActive (false);
+            if (i == m_level.Count - 1) {
+                m_activeLevelIndex = 0;
+                m_level[0].m_isActiveScene = true;
+            }
         }
+    }
+
+    private int NextScene() {
+        int sceneToLoadIndex = m_activeLevelIndex + 1;
+        if (sceneToLoadIndex == m_level.Count - 1)
+            return 0;
+        else return sceneToLoadIndex;
     }
 }
 
