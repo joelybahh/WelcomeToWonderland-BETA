@@ -30,6 +30,14 @@ ModelImporter:
     100044: Walkway
     100046: Walkway1
     100048: //RootNode
+    100050: StageHallways
+    100052: StageWalls16
+    100054: StageWalls16 1
+    100056: StageWalls16 2
+    100058: StageWalls17
+    100060: StageWalls18
+    100062: StageWalls1816
+    100064: Walls
     400000: hallway
     400002: Stage
     400004: Stage_geo
@@ -55,6 +63,14 @@ ModelImporter:
     400044: Walkway
     400046: Walkway1
     400048: //RootNode
+    400050: StageHallways
+    400052: StageWalls16
+    400054: StageWalls16 1
+    400056: StageWalls16 2
+    400058: StageWalls17
+    400060: StageWalls18
+    400062: StageWalls1816
+    400064: Walls
     2300000: Stage
     2300002: Stage_geo
     2300004: Stage_geo1
@@ -74,6 +90,12 @@ ModelImporter:
     2300032: StageHallway3
     2300034: StageWall
     2300036: StageWall1
+    2300038: StageWalls16
+    2300040: StageWalls16 1
+    2300042: StageWalls16 2
+    2300044: StageWalls17
+    2300046: StageWalls18
+    2300048: StageWalls1816
     3300000: Stage
     3300002: Stage_geo
     3300004: Stage_geo1
@@ -93,6 +115,12 @@ ModelImporter:
     3300032: StageHallway3
     3300034: StageWall
     3300036: StageWall1
+    3300038: StageWalls16
+    3300040: StageWalls16 1
+    3300042: StageWalls16 2
+    3300044: StageWalls17
+    3300046: StageWalls18
+    3300048: StageWalls1816
     4300000: StageCurve
     4300002: StageWall
     4300004: StageWall1
@@ -112,6 +140,12 @@ ModelImporter:
     4300032: Stage_geo1
     4300034: Stage_geo2
     4300036: Stage
+    4300038: StageWalls16
+    4300040: StageWalls16
+    4300042: StageWalls1816
+    4300044: StageWalls18
+    4300046: StageWalls16
+    4300048: StageWalls17
   materials:
     importMaterials: 1
     materialName: 0
