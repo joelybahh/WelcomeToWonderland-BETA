@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace WW.Puzzles {
     public class SeatButtonPuzzle : Puzzle {
-        List<NewtonVR.NVRButton> buttons;
+       public List<NewtonVR.NVRButton> buttons;
         
 
 

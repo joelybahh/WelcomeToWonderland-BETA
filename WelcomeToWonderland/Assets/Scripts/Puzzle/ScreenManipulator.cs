@@ -22,9 +22,7 @@ public class ScreenManipulator : MonoBehaviour {
     {
         if (aBool)
         {
-            m_timerScreen.enabled = true;
-            m_timerScreen.GetComponentInChildren<Text>().color = Color.black;
-            m_AngryScreen.GetComponentInChildren<Text>().text = "⋋_⋌";
+
         }
         if (!aBool) m_timerScreen.enabled = false;
 
@@ -38,6 +36,21 @@ public class ScreenManipulator : MonoBehaviour {
         }
         if (!aBool) m_AngryScreen.enabled = false;
 
+    }
+
+    public void QuizShowQuestionScreen()
+    {
+        m_timerScreen.enabled = true;
+        m_timerScreen.GetComponentInChildren<Text>().color = Color.black;
+
+        m_AngryScreen.GetComponentInChildren<Text>().color = Color.red;
+        m_AngryScreen.GetComponentInChildren<Text>().text = "⋋_⋌";
+        m_AngryScreen.enabled = false;
+    }
+    public void QuizShowWrongScreen()
+    {
+        m_timerScreen.enabled = false;
+        m_AngryScreen.enabled = true;
     }
 }
 
