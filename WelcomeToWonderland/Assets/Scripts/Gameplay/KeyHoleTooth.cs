@@ -6,13 +6,15 @@ public class KeyHoleTooth : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         if ( other.gameObject.tag == "LevelKey"  ) {
-            GetComponent<KeyHole>().turned = true;
+            KeyHole keyHoleTemp = GetComponent<KeyHole> ();
+            if(keyHoleTemp != null) keyHoleTemp.turned = true;
         }
     }
 
     private void OnTriggerExit(Collider other) {
-        if ( other.gameObject.tag == "LevelKey" ) {
-            GetComponent<KeyHole>().turned = false;
+        if (other.gameObject.tag == "LevelKey") {
+            KeyHole keyHoleTemp = GetComponent<KeyHole> ();
+            if (keyHoleTemp != null) keyHoleTemp.turned = false;
         }
     }
 }
