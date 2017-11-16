@@ -11,7 +11,7 @@ public class ElevatorController : MonoBehaviour {
 
     [SerializeField] private List<LevelInfo> m_level;
 
-    private int m_activeLevelIndex;
+    private int m_activeLevelIndex = 0;
 
     private void Start () {
         SetupInitScene ();
@@ -19,7 +19,7 @@ public class ElevatorController : MonoBehaviour {
 
     void Update () {
         //Press the space key to start coroutine
-        if (Input.GetKey (KeyCode.Space)) {
+        if (Input.GetKeyDown (KeyCode.Space)) {
             //Use a coroutine to load the Scene in the background
             StartCoroutine (
                 LoadYourAsyncScene (
@@ -39,18 +39,24 @@ public class ElevatorController : MonoBehaviour {
     }
 
     private void SetupInitScene() {
-        for (int i = 0; i < m_level.Count; i++) {
-            if (m_level[i].m_isActiveScene) {
-                m_activeLevelIndex = i;
-                break;
-            }
+        //for (int i = 0; i < m_level.Count; i++) {
+        //    if (m_level[i].m_isActiveScene) {
+        //        m_activeLevelIndex = i;
+        //        break;
+        //    }
 
-            if (i == m_level.Count - 1) {
-                m_activeLevelIndex = 0;
-                m_level[0].m_isActiveScene = true;
-            }
-        }
+        //    if (i == m_level.Count - 1) {
+        //        m_activeLevelIndex = 0;
+        //        m_level[0].m_isActiveScene = true;
+        //    }
+        //}
     }
+
+    public void LoadSceneASyncronous() {
+        StartCoroutine (
+                LoadYourAsyncScene (
+                    NextScene ()));
+     }
 
     private int NextScene() {
         int sceneToLoadIndex = m_activeLevelIndex + 1;
