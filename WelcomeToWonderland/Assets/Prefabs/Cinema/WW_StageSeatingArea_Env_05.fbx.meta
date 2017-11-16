@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 36b56efdf03e8d74bbd3f2bafaa4fd75
+timeCreated: 1510875132
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: RoofCube
+    100002: Stage
+    100004: Stage_geo1
+    100006: Stage_geo2
+    100008: Stage_geo5
+    100010: StageCurve1
+    100012: StageHallways
+    100014: StageWalls
+    100016: StageWalls16
+    100018: StageWalls16 1
+    100020: StageWalls17
+    100022: //RootNode
+    400000: RoofCube
+    400002: Stage
+    400004: Stage_geo1
+    400006: Stage_geo2
+    400008: Stage_geo5
+    400010: StageCurve1
+    400012: StageHallways
+    400014: StageWalls
+    400016: StageWalls16
+    400018: StageWalls16 1
+    400020: StageWalls17
+    400022: //RootNode
+    2300000: RoofCube
+    2300002: Stage
+    2300004: Stage_geo1
+    2300006: Stage_geo2
+    2300008: Stage_geo5
+    2300010: StageCurve1
+    2300012: StageWalls16
+    2300014: StageWalls16 1
+    2300016: StageWalls17
+    3300000: RoofCube
+    3300002: Stage
+    3300004: Stage_geo1
+    3300006: Stage_geo2
+    3300008: Stage_geo5
+    3300010: StageCurve1
+    3300012: StageWalls16
+    3300014: StageWalls16 1
+    3300016: StageWalls17
+    4300000: StageWalls16
+    4300002: Stage_geo1
+    4300004: Stage_geo2
+    4300006: Stage
+    4300008: StageWalls16
+    4300010: StageWalls17
+    4300012: StageCurve1
+    4300014: Stage_geo5
+    4300016: RoofCube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
