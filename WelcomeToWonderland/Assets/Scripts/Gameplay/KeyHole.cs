@@ -8,9 +8,14 @@ public class KeyHole : MonoBehaviour {
 	// Use this for initialization
 	void OnTriggerEnter (Collider other) {
 		if(other.gameObject.tag == "LevelKey" && other.gameObject.GetComponent<LevelKey>().Name == indexName ) {
-            other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition  | 
+            var c = other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition  | 
                                                                      RigidbodyConstraints.FreezeRotationY | 
                                                                      RigidbodyConstraints.FreezeRotationZ;
+
+            if( (c & RigidbodyConstraints.FreezePosition) == RigidbodyConstraints.FreezePosition ) {
+
+            }
+
         }
 	}
 	
