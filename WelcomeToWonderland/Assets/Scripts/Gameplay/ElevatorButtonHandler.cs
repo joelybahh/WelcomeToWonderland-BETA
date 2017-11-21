@@ -10,21 +10,57 @@ namespace WW.Managers {
     /// Description: This class is used to handle the logic associated
     ///              with all the buttons inside the elevator.
     /// </summary>
-    public class ElevatorButtonHandler : MonoBehaviour {
-
-        // TODO: Set up a state machine on this handler that store if the elevator is functioning/malfunctioning
+    public class ElevatorButtonHandler : MonoBehaviour {        
 
         [Header("Button References")]
         [SerializeField] private NVRButton m_emergencyButton;
         [SerializeField] private NVRButton m_openDoorsButton;
         [SerializeField] private NVRButton m_closeDoorsButton;
 
-        [Header("Button Events")]
+        [Header("Standard Button Events")]
         [SerializeField] private UnityEvent m_onEmergencyButtonDown;
         [SerializeField] private UnityEvent m_onOpenButtonDown;
         [SerializeField] private UnityEvent m_onCloseButtonDown;
 
-        void Update () {
+        [Header ("Malfunction Button Events")]
+        [SerializeField] private UnityEvent m_onEmergMalButtonDown;
+        [SerializeField] private UnityEvent m_onOpenMalButtonDown;
+        [SerializeField] private UnityEvent m_onCloseMalButtonDown;
+
+        private static bool m_hasMalfunctioned = false;
+        
+        private Animator m_animator;
+
+        private void Start () {
+            m_animator = GetComponent<Animator> ();
+        }
+
+        private void Update () {
+            if (!m_hasMalfunctioned) UpdateMalfunctionAnimStates ();              
+            else                     UpdateStandardAnimStates ();
+        }
+
+        /// <summary>
+        /// Updates the states and unity events for button presses during malfunction phase
+        /// </summary>
+        private void UpdateMalfunctionAnimStates() {
+
+            if (m_emergencyButton.ButtonDown) {
+                m_onEmergMalButtonDown.Invoke ();
+                m_hasMalfunctioned = true;
+            }
+            if (m_openDoorsButton.ButtonDown) {
+                m_onOpenMalButtonDown.Invoke ();
+            }
+            if (m_closeDoorsButton.ButtonDown) {
+                m_onCloseMalButtonDown.Invoke ();
+            }
+        }
+
+        /// <summary>
+        /// Updates the states and unity events for button presses during the standard phase
+        /// </summary>
+        private void UpdateStandardAnimStates () {
             if (m_emergencyButton.ButtonDown) {
                 m_onEmergencyButtonDown.Invoke ();
             }
