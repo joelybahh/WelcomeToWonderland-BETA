@@ -18,7 +18,7 @@ namespace cakeslice
         // Update is called once per frame
         void Update()
         {
-            transform.Rotate(Vector3.up, Time.deltaTime * 20);
+            transform.Rotate(transform.up, Time.deltaTime * 20);
 
             timer -= Time.deltaTime;
             if(timer < 0)
