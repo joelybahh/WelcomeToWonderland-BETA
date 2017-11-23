@@ -62,7 +62,7 @@ namespace WW.Managers
             //call final countdown
             if (m_minutes == 0 && (int)m_seconds == 15)
             {
-                AudioManager.Instance.PlayVoiceLine(36);
+                //AudioManager.Instance.PlayVoiceLine(36);
             }
             if(m_seconds > 10)m_display.text = (m_minutes + ":" + (int)m_seconds);
             else m_display.text = (m_minutes + ":0" + (int)m_seconds);

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WW.Managers;
 
 namespace WW.Movement {
     /// <summary>
@@ -11,21 +12,25 @@ namespace WW.Movement {
     public class HeadsetClipping : MonoBehaviour {
 
         public static bool m_isClipping = false;
-        public TeleportVive m_teleRef; 
+        public TeleportVive m_teleRef;
         public GameObject m_infoText;
 
-        private void OnTriggerStay(Collider a_other) {
-            if (a_other.tag != "MainCamera" && 
-                a_other.tag != "Player" && 
-                a_other.tag != "CigarPoint" & 
-                a_other.tag != "FacialFeature") 
-            {
+        private void OnTriggerEnter ( Collider a_other ) {
+            if(a_other.tag == "ShowFloor") {
+                AudioManager.Instance.PlayVoiceLine (14);
+            }
+        }
+
+        private void OnTriggerStay ( Collider a_other ) {
+            if (a_other.tag != "MainCamera" &&
+                a_other.tag != "Player" &&
+                a_other.tag != "CigarPoint" &&
+                a_other.tag != "FacialFeature" &&
+                a_other.tag != "ShowFloor") {
                 m_isClipping = true;
                 m_teleRef.CanTeleport = false;
                 m_infoText.SetActive (true);
-            } 
-            else 
-            {
+            } else {
                 m_isClipping = false;
                 m_teleRef.CanTeleport = true;
                 m_infoText.SetActive (false);

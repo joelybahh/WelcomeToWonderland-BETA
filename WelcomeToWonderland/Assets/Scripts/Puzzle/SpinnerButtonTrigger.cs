@@ -21,7 +21,7 @@ namespace WW.Puzzles.Helper {
             if (a_other.tag == "Boomber")
             {
                 int audioID = Random.Range(minRangeAudio, maxRangeAudio);
-                Managers.AudioManager.Instance.PlayVoiceLine(audioID);
+                //Managers.AudioManager.Instance.PlayVoiceLine(audioID);
             }
         }
 
