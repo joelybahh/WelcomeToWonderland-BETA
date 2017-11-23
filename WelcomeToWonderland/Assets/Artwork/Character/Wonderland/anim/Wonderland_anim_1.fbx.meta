@@ -1,0 +1,869 @@
+fileFormatVersion: 2
+guid: 32116501a19628341aa4804d5e510745
+timeCreated: 1511411331
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: group6
+    100002: nametag_geo
+    100004: pCube19
+    100006: pCube32_pCube6_pCube8
+    100008: pCube32_pCube6_pCube8 1
+    100010: pCube40
+    100012: pCube40 1
+    100014: pCube41
+    100016: pCube41 1
+    100018: pCube42
+    100020: pCube42 1
+    100022: pCube43
+    100024: pCube43 1
+    100026: pCube44
+    100028: pCube44 1
+    100030: pCube45
+    100032: pCube45 1
+    100034: pCube46
+    100036: pCube46 1
+    100038: pCube47
+    100040: pCube47 1
+    100042: pCube48
+    100044: pCube48 1
+    100046: pCube49
+    100048: pCube49 1
+    100050: pCube5
+    100052: pCube5 1
+    100054: pCube5 2
+    100056: pCube5 3
+    100058: pCube50
+    100060: pCube50 1
+    100062: pCube51
+    100064: pCube51 1
+    100066: pCube51_pCylinder17
+    100068: pCube51_pCylinder17 1
+    100070: pCube52
+    100072: pCube52 1
+    100074: pCube53
+    100076: pCube53 1
+    100078: pCube55
+    100080: pCube55 1
+    100082: pCube55 2
+    100084: pCube55 3
+    100086: pCube57
+    100088: pCube57 1
+    100090: pCube58
+    100092: pCube58 1
+    100094: pCube59
+    100096: pCube59 1
+    100098: pCube61
+    100100: pCube61 1
+    100102: pCube62
+    100104: pCube62 1
+    100106: pCube63
+    100108: pCube63 1
+    100110: pCube70
+    100112: pCube70 1
+    100114: pCylinder10
+    100116: pCylinder11
+    100118: pCylinder11 1
+    100120: pCylinder11 2
+    100122: pCylinder11 3
+    100124: pCylinder20
+    100126: pCylinder20 1
+    100128: pCylinder21
+    100130: pCylinder21 1
+    100132: pCylinder22
+    100134: pCylinder22 1
+    100136: pCylinder23
+    100138: pCylinder23 1
+    100140: pCylinder24
+    100142: pCylinder24 1
+    100144: pCylinder25
+    100146: pCylinder25 1
+    100148: pCylinder26
+    100150: pCylinder26 1
+    100152: pCylinder27
+    100154: pCylinder28
+    100156: pCylinder28 1
+    100158: pCylinder29
+    100160: pCylinder29 1
+    100162: pCylinder31
+    100164: pCylinder31 1
+    100166: pCylinder32
+    100168: pCylinder32 1
+    100170: pCylinder33
+    100172: pCylinder33 1
+    100174: pCylinder34
+    100176: pCylinder34 1
+    100178: pCylinder37
+    100180: pCylinder38
+    100182: pCylinder8
+    100184: pCylinder8 1
+    100186: pCylinder8 2
+    100188: pCylinder8 3
+    100190: polySurface64
+    100192: polySurface64 1
+    100194: polySurface76
+    100196: polySurface76 1
+    100198: polySurface77
+    100200: polySurface77 1
+    100202: polySurface78
+    100204: polySurface78 1
+    100206: polySurface79
+    100208: polySurface79 1
+    100210: polySurface80
+    100212: polySurface80 1
+    100214: polySurface81
+    100216: polySurface81 1
+    100218: polySurface85
+    100220: polySurface85 1
+    100222: polySurface86
+    100224: polySurface86 1
+    100226: shin
+    100228: shin 1
+    100230: thigh
+    100232: thigh 1
+    100234: TV_body
+    100236: TV_glass
+    100238: TV_screen
+    100240: //RootNode
+    100242: wrist_pCube19
+    100244: wrist_pCube19 1
+    400000: group6
+    400002: nametag_geo
+    400004: pCube19
+    400006: pCube32_pCube6_pCube8
+    400008: pCube32_pCube6_pCube8 1
+    400010: pCube40
+    400012: pCube40 1
+    400014: pCube41
+    400016: pCube41 1
+    400018: pCube42
+    400020: pCube42 1
+    400022: pCube43
+    400024: pCube43 1
+    400026: pCube44
+    400028: pCube44 1
+    400030: pCube45
+    400032: pCube45 1
+    400034: pCube46
+    400036: pCube46 1
+    400038: pCube47
+    400040: pCube47 1
+    400042: pCube48
+    400044: pCube48 1
+    400046: pCube49
+    400048: pCube49 1
+    400050: pCube5
+    400052: pCube5 1
+    400054: pCube5 2
+    400056: pCube5 3
+    400058: pCube50
+    400060: pCube50 1
+    400062: pCube51
+    400064: pCube51 1
+    400066: pCube51_pCylinder17
+    400068: pCube51_pCylinder17 1
+    400070: pCube52
+    400072: pCube52 1
+    400074: pCube53
+    400076: pCube53 1
+    400078: pCube55
+    400080: pCube55 1
+    400082: pCube55 2
+    400084: pCube55 3
+    400086: pCube57
+    400088: pCube57 1
+    400090: pCube58
+    400092: pCube58 1
+    400094: pCube59
+    400096: pCube59 1
+    400098: pCube61
+    400100: pCube61 1
+    400102: pCube62
+    400104: pCube62 1
+    400106: pCube63
+    400108: pCube63 1
+    400110: pCube70
+    400112: pCube70 1
+    400114: pCylinder10
+    400116: pCylinder11
+    400118: pCylinder11 1
+    400120: pCylinder11 2
+    400122: pCylinder11 3
+    400124: pCylinder20
+    400126: pCylinder20 1
+    400128: pCylinder21
+    400130: pCylinder21 1
+    400132: pCylinder22
+    400134: pCylinder22 1
+    400136: pCylinder23
+    400138: pCylinder23 1
+    400140: pCylinder24
+    400142: pCylinder24 1
+    400144: pCylinder25
+    400146: pCylinder25 1
+    400148: pCylinder26
+    400150: pCylinder26 1
+    400152: pCylinder27
+    400154: pCylinder28
+    400156: pCylinder28 1
+    400158: pCylinder29
+    400160: pCylinder29 1
+    400162: pCylinder31
+    400164: pCylinder31 1
+    400166: pCylinder32
+    400168: pCylinder32 1
+    400170: pCylinder33
+    400172: pCylinder33 1
+    400174: pCylinder34
+    400176: pCylinder34 1
+    400178: pCylinder37
+    400180: pCylinder38
+    400182: pCylinder8
+    400184: pCylinder8 1
+    400186: pCylinder8 2
+    400188: pCylinder8 3
+    400190: polySurface64
+    400192: polySurface64 1
+    400194: polySurface76
+    400196: polySurface76 1
+    400198: polySurface77
+    400200: polySurface77 1
+    400202: polySurface78
+    400204: polySurface78 1
+    400206: polySurface79
+    400208: polySurface79 1
+    400210: polySurface80
+    400212: polySurface80 1
+    400214: polySurface81
+    400216: polySurface81 1
+    400218: polySurface85
+    400220: polySurface85 1
+    400222: polySurface86
+    400224: polySurface86 1
+    400226: shin
+    400228: shin 1
+    400230: thigh
+    400232: thigh 1
+    400234: TV_body
+    400236: TV_glass
+    400238: TV_screen
+    400240: //RootNode
+    400242: wrist_pCube19
+    400244: wrist_pCube19 1
+    2300000: nametag_geo
+    2300002: pCube19
+    2300004: pCube32_pCube6_pCube8
+    2300006: pCube32_pCube6_pCube8 1
+    2300008: pCube40
+    2300010: pCube40 1
+    2300012: pCube41
+    2300014: pCube41 1
+    2300016: pCube42
+    2300018: pCube42 1
+    2300020: pCube43
+    2300022: pCube43 1
+    2300024: pCube44
+    2300026: pCube44 1
+    2300028: pCube45
+    2300030: pCube45 1
+    2300032: pCube46
+    2300034: pCube46 1
+    2300036: pCube47
+    2300038: pCube47 1
+    2300040: pCube48
+    2300042: pCube48 1
+    2300044: pCube49
+    2300046: pCube49 1
+    2300048: pCube5
+    2300050: pCube5 1
+    2300052: pCube5 2
+    2300054: pCube5 3
+    2300056: pCube50
+    2300058: pCube50 1
+    2300060: pCube51
+    2300062: pCube51 1
+    2300064: pCube51_pCylinder17
+    2300066: pCube51_pCylinder17 1
+    2300068: pCube52
+    2300070: pCube52 1
+    2300072: pCube53
+    2300074: pCube53 1
+    2300076: pCube55
+    2300078: pCube55 1
+    2300080: pCube55 2
+    2300082: pCube55 3
+    2300084: pCube57
+    2300086: pCube57 1
+    2300088: pCube58
+    2300090: pCube58 1
+    2300092: pCube59
+    2300094: pCube59 1
+    2300096: pCube61
+    2300098: pCube61 1
+    2300100: pCube62
+    2300102: pCube62 1
+    2300104: pCube63
+    2300106: pCube63 1
+    2300108: pCube70
+    2300110: pCube70 1
+    2300112: pCylinder10
+    2300114: pCylinder11
+    2300116: pCylinder11 1
+    2300118: pCylinder11 2
+    2300120: pCylinder11 3
+    2300122: pCylinder20
+    2300124: pCylinder20 1
+    2300126: pCylinder21
+    2300128: pCylinder21 1
+    2300130: pCylinder22
+    2300132: pCylinder22 1
+    2300134: pCylinder23
+    2300136: pCylinder23 1
+    2300138: pCylinder24
+    2300140: pCylinder24 1
+    2300142: pCylinder25
+    2300144: pCylinder25 1
+    2300146: pCylinder26
+    2300148: pCylinder26 1
+    2300150: pCylinder27
+    2300152: pCylinder28
+    2300154: pCylinder28 1
+    2300156: pCylinder29
+    2300158: pCylinder29 1
+    2300160: pCylinder31
+    2300162: pCylinder31 1
+    2300164: pCylinder32
+    2300166: pCylinder32 1
+    2300168: pCylinder33
+    2300170: pCylinder33 1
+    2300172: pCylinder34
+    2300174: pCylinder34 1
+    2300176: pCylinder37
+    2300178: pCylinder38
+    2300180: pCylinder8
+    2300182: pCylinder8 1
+    2300184: pCylinder8 2
+    2300186: pCylinder8 3
+    2300188: polySurface64
+    2300190: polySurface64 1
+    2300192: polySurface76
+    2300194: polySurface76 1
+    2300196: polySurface77
+    2300198: polySurface77 1
+    2300200: polySurface78
+    2300202: polySurface78 1
+    2300204: polySurface79
+    2300206: polySurface79 1
+    2300208: polySurface80
+    2300210: polySurface80 1
+    2300212: polySurface81
+    2300214: polySurface81 1
+    2300216: polySurface85
+    2300218: polySurface85 1
+    2300220: polySurface86
+    2300222: polySurface86 1
+    2300224: shin
+    2300226: shin 1
+    2300228: thigh
+    2300230: thigh 1
+    2300232: TV_body
+    2300234: TV_glass
+    2300236: TV_screen
+    2300238: //RootNode
+    2300240: wrist_pCube19
+    2300242: wrist_pCube19 1
+    3300000: nametag_geo
+    3300002: pCube19
+    3300004: pCube32_pCube6_pCube8
+    3300006: pCube32_pCube6_pCube8 1
+    3300008: pCube40
+    3300010: pCube40 1
+    3300012: pCube41
+    3300014: pCube41 1
+    3300016: pCube42
+    3300018: pCube42 1
+    3300020: pCube43
+    3300022: pCube43 1
+    3300024: pCube44
+    3300026: pCube44 1
+    3300028: pCube45
+    3300030: pCube45 1
+    3300032: pCube46
+    3300034: pCube46 1
+    3300036: pCube47
+    3300038: pCube47 1
+    3300040: pCube48
+    3300042: pCube48 1
+    3300044: pCube49
+    3300046: pCube49 1
+    3300048: pCube5
+    3300050: pCube5 1
+    3300052: pCube5 2
+    3300054: pCube5 3
+    3300056: pCube50
+    3300058: pCube50 1
+    3300060: pCube51
+    3300062: pCube51 1
+    3300064: pCube51_pCylinder17
+    3300066: pCube51_pCylinder17 1
+    3300068: pCube52
+    3300070: pCube52 1
+    3300072: pCube53
+    3300074: pCube53 1
+    3300076: pCube55
+    3300078: pCube55 1
+    3300080: pCube55 2
+    3300082: pCube55 3
+    3300084: pCube57
+    3300086: pCube57 1
+    3300088: pCube58
+    3300090: pCube58 1
+    3300092: pCube59
+    3300094: pCube59 1
+    3300096: pCube61
+    3300098: pCube61 1
+    3300100: pCube62
+    3300102: pCube62 1
+    3300104: pCube63
+    3300106: pCube63 1
+    3300108: pCube70
+    3300110: pCube70 1
+    3300112: pCylinder10
+    3300114: pCylinder11
+    3300116: pCylinder11 1
+    3300118: pCylinder11 2
+    3300120: pCylinder11 3
+    3300122: pCylinder20
+    3300124: pCylinder20 1
+    3300126: pCylinder21
+    3300128: pCylinder21 1
+    3300130: pCylinder22
+    3300132: pCylinder22 1
+    3300134: pCylinder23
+    3300136: pCylinder23 1
+    3300138: pCylinder24
+    3300140: pCylinder24 1
+    3300142: pCylinder25
+    3300144: pCylinder25 1
+    3300146: pCylinder26
+    3300148: pCylinder26 1
+    3300150: pCylinder27
+    3300152: pCylinder28
+    3300154: pCylinder28 1
+    3300156: pCylinder29
+    3300158: pCylinder29 1
+    3300160: pCylinder31
+    3300162: pCylinder31 1
+    3300164: pCylinder32
+    3300166: pCylinder32 1
+    3300168: pCylinder33
+    3300170: pCylinder33 1
+    3300172: pCylinder34
+    3300174: pCylinder34 1
+    3300176: pCylinder37
+    3300178: pCylinder38
+    3300180: pCylinder8
+    3300182: pCylinder8 1
+    3300184: pCylinder8 2
+    3300186: pCylinder8 3
+    3300188: polySurface64
+    3300190: polySurface64 1
+    3300192: polySurface76
+    3300194: polySurface76 1
+    3300196: polySurface77
+    3300198: polySurface77 1
+    3300200: polySurface78
+    3300202: polySurface78 1
+    3300204: polySurface79
+    3300206: polySurface79 1
+    3300208: polySurface80
+    3300210: polySurface80 1
+    3300212: polySurface81
+    3300214: polySurface81 1
+    3300216: polySurface85
+    3300218: polySurface85 1
+    3300220: polySurface86
+    3300222: polySurface86 1
+    3300224: shin
+    3300226: shin 1
+    3300228: thigh
+    3300230: thigh 1
+    3300232: TV_body
+    3300234: TV_glass
+    3300236: TV_screen
+    3300238: //RootNode
+    3300240: wrist_pCube19
+    3300242: wrist_pCube19 1
+    4300000: typeMesh3
+    4300002: pCylinder10
+    4300004: pCube55
+    4300006: pCylinder8
+    4300008: pCube5
+    4300010: pCylinder11
+    4300012: polySurface77
+    4300014: polySurface86
+    4300016: polySurface76
+    4300018: polySurface64
+    4300020: wrist_pCube19
+    4300022: pCube51_pCylinder17
+    4300024: pCube51
+    4300026: pCube52
+    4300028: pCube53
+    4300030: pCube50
+    4300032: pCube43
+    4300034: pCube40
+    4300036: pCube49
+    4300038: pCube44
+    4300040: pCube41
+    4300042: pCube48
+    4300044: pCube45
+    4300046: pCube42
+    4300048: pCube47
+    4300050: pCube46
+    4300052: pCube32_pCube6_pCube8
+    4300054: polySurface85
+    4300056: pCylinder27
+    4300058: pCube55
+    4300060: pCylinder8
+    4300062: pCube5
+    4300064: pCylinder11
+    4300066: thigh
+    4300068: pCylinder24
+    4300070: pCylinder25
+    4300072: pCylinder26
+    4300074: pCylinder32
+    4300076: pCylinder33
+    4300078: pCylinder34
+    4300080: pCylinder31
+    4300082: pCube63
+    4300084: shin
+    4300086: pCylinder21
+    4300088: pCube57
+    4300090: pCylinder23
+    4300092: pCube62
+    4300094: pCylinder29
+    4300096: pCube61
+    4300098: pCylinder28
+    4300100: pCube70
+    4300102: polySurface81
+    4300104: polySurface80
+    4300106: polySurface78
+    4300108: polySurface79
+    4300110: pCylinder22
+    4300112: pCylinder20
+    4300114: pCube58
+    4300116: pCube59
+    4300118: TV_body
+    4300120: TV_screen
+    4300122: TV_glass
+    4300124: pCube19
+    4300126: nametag_geo
+    4300128: pCylinder37
+    4300130: pCube55
+    4300132: pCylinder8
+    4300134: pCube5
+    4300136: pCylinder11
+    4300138: thigh
+    4300140: pCylinder24
+    4300142: pCylinder25
+    4300144: pCylinder26
+    4300146: pCylinder32
+    4300148: pCylinder33
+    4300150: pCylinder34
+    4300152: pCylinder31
+    4300154: pCube63
+    4300156: shin
+    4300158: pCylinder21
+    4300160: pCube57
+    4300162: pCylinder23
+    4300164: pCube62
+    4300166: pCylinder29
+    4300168: pCube61
+    4300170: pCylinder28
+    4300172: pCube70
+    4300174: polySurface81
+    4300176: polySurface80
+    4300178: polySurface78
+    4300180: polySurface79
+    4300182: pCylinder22
+    4300184: pCylinder20
+    4300186: pCube58
+    4300188: pCube59
+    4300190: pCylinder38
+    4300192: pCube55
+    4300194: pCylinder8
+    4300196: pCube5
+    4300198: pCylinder11
+    4300200: polySurface77
+    4300202: polySurface86
+    4300204: polySurface76
+    4300206: polySurface64
+    4300208: wrist_pCube19
+    4300210: pCube51_pCylinder17
+    4300212: pCube51
+    4300214: pCube52
+    4300216: pCube53
+    4300218: pCube50
+    4300220: pCube43
+    4300222: pCube40
+    4300224: pCube49
+    4300226: pCube44
+    4300228: pCube41
+    4300230: pCube48
+    4300232: pCube45
+    4300234: pCube42
+    4300236: pCube47
+    4300238: pCube46
+    4300240: pCube32_pCube6_pCube8
+    4300242: polySurface85
+    7400000: Take 001
+    7400002: face_touch_fwd
+    7400004: shake_head
+    7400006: nodd
+    7400008: arms_crazy
+    7400010: hands_together
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 800
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: face_touch_fwd
+      takeName: Take 001
+      firstFrame: 127
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: shake_head
+      takeName: Take 001
+      firstFrame: 180
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: nodd
+      takeName: Take 001
+      firstFrame: 240
+      lastFrame: 278
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: arms_crazy
+      takeName: Take 001
+      firstFrame: 294
+      lastFrame: 383
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hands_together
+      takeName: Take 001
+      firstFrame: 383
+      lastFrame: 514
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
