@@ -8,9 +8,15 @@ public class InitialAudio : MonoBehaviour {
     AudioSource m_source;
     bool m_playedFirstInitial = false;
 
+    public static bool HasPlayedFirstVoiceLine = false;
     public GameObject m_tv;
+    public AudioClip m_elevatorArrive;
+    public Renderer renderer;
+    public Material dingMat;
 
-	void Start () {
+    private bool hasPlayedArriveDing = false;
+
+    void Start () {
         m_source = GetComponent<AudioSource>();
         AudioManager.Instance.PlayVoiceLine(0);
 	}
@@ -23,8 +29,22 @@ public class InitialAudio : MonoBehaviour {
         }
 
         if(m_playedFirstInitial) {
-            AudioManager.Instance.PlayVoiceLine(1);
+            HasPlayedFirstVoiceLine = true;
+
+            if (!hasPlayedArriveDing) {
+                m_source.PlayOneShot (m_elevatorArrive);
+                hasPlayedArriveDing = true;
+            }
+            StartCoroutine (DelayedMaterialChange (2.8f));
+
+            AudioManager.Instance.PlayVoiceLineDelayed(1, 8);
             m_tv.SetActive(true);
         }
+    }
+
+    private IEnumerator DelayedMaterialChange(float a_time) {
+        yield return new WaitForSeconds (a_time);
+        renderer.material = dingMat;
+
     }
 }

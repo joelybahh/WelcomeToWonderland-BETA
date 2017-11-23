@@ -13,6 +13,9 @@ public class TaserDisabler : MonoBehaviour {
 
     [SerializeField] private Renderer[] m_prongs;
 
+    [SerializeField] private AudioSource m_source;
+    [SerializeField] private AudioClip m_clip;
+
     // Use this for initialization
     void Start () {
         particle = GetComponentInChildren<ParticleSystem>();
@@ -52,5 +55,17 @@ public class TaserDisabler : MonoBehaviour {
     public void SetIsOn(bool aBool)
     {
         isOn = aBool;
+    }
+
+    private void OnTriggerEnter ( Collider a_other ) {
+        if(a_other.tag != gameObject.tag &&
+                a_other.tag != "MainCamera" &&
+                a_other.tag != "Player" &&
+                a_other.tag != "CigarPoint" &&
+                a_other.tag != "FacialFeature" &&
+                a_other.tag != "ShowFloor"
+                /*isOn*/) {
+            m_source.PlayOneShot (m_clip);
+        }
     }
 }
