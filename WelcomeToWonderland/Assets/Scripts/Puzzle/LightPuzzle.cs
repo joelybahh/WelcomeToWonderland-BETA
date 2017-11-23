@@ -42,13 +42,13 @@ namespace WW.Puzzles {
                 if (!PuzzleCorrect)
                 {
                     StartCoroutine(IncorrectSequence(1.0f));
-                    AudioManager.Instance.PlayVoiceLine(8);
+                    //AudioManager.Instance.PlayVoiceLine(8);
                 }
             } else if (m_buttonIds.Count > 4) {
                 m_buttonIds = new List<int>();
 
                 StartCoroutine(IncorrectSequence(1.0f));
-                AudioManager.Instance.PlayVoiceLine(8);
+                //AudioManager.Instance.PlayVoiceLine(8);
 
             } else {
                 //if()
@@ -135,8 +135,8 @@ namespace WW.Puzzles {
                 m_lights[i].Light.color = Color.blue;
             }
 
-            AudioManager.Instance.PlayVoiceLine(9);
-            AudioManager.Instance.PlayVoiceLineDelayed(8, 10);
+            //AudioManager.Instance.PlayVoiceLine(9);
+            //AudioManager.Instance.PlayVoiceLineDelayed(8, 10);
         }
 
        public void AddToList(StageLight aLight) {

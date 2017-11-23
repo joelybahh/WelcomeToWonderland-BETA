@@ -43,7 +43,7 @@ namespace WW.CustomPhysics {
         private void UpdateTwistState() {
             switch (m_twistState) {
                 case eTwistState.CLOSED: m_flap.SetActive(true);  break;
-                case eTwistState.OPENED: m_flap.SetActive(false); AudioManager.Instance.PlayVoiceLine(34); break;
+                case eTwistState.OPENED: m_flap.SetActive(false); /*AudioManager.Instance.PlayVoiceLine(34);*/ break;
             }
         }
 

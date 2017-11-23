@@ -28,7 +28,8 @@ namespace WW.Managers {
         [SerializeField] private UnityEvent m_onCloseMalButtonDown;
 
         private static bool m_hasMalfunctioned = false;
-        
+        private bool isStopped = false;
+
         private Animator m_animator;
 
         private void Start () {
@@ -36,8 +37,11 @@ namespace WW.Managers {
         }
 
         private void Update () {
-            if (!m_hasMalfunctioned) UpdateMalfunctionAnimStates ();              
-            else                     UpdateStandardAnimStates ();
+            isStopped = InitialAudio.HasPlayedFirstVoiceLine;
+            if (isStopped) {
+                if (!m_hasMalfunctioned) UpdateMalfunctionAnimStates ();
+                else UpdateStandardAnimStates ();
+            }
         }
 
         /// <summary>
@@ -49,10 +53,10 @@ namespace WW.Managers {
                 m_onEmergMalButtonDown.Invoke ();
                 m_hasMalfunctioned = true;
             }
-            if (m_openDoorsButton.ButtonDown) {
+            if (m_openDoorsButton.ButtonDown || m_openDoorsButton.ButtonIsPushed) {
                 m_onOpenMalButtonDown.Invoke ();
             }
-            if (m_closeDoorsButton.ButtonDown) {
+            if (m_closeDoorsButton.ButtonDown || m_closeDoorsButton.ButtonIsPushed) {
                 m_onCloseMalButtonDown.Invoke ();
             }
         }

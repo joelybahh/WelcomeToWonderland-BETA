@@ -110,7 +110,7 @@ public class SteamVR_Teleporter : MonoBehaviour
         {
             if (doOnce)
             {
-                WW.Managers.AudioManager.Instance.PlayVoiceLine(3);
+                //WW.Managers.AudioManager.Instance.PlayVoiceLine(3);
                 doOnce = false;
             }
             steamVrLaser.enabled = (true);
