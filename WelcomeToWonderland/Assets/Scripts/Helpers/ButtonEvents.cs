@@ -24,8 +24,16 @@ namespace WW.Helpers {
         [SerializeField] private UnityEvent m_onButtonDown;
         [SerializeField] private UnityEvent m_onButtonUp;
 
+        private bool oneShotClip = false;
+        public bool OneShotClip {
+            set { OneShotClip = value; }
+        }
+
+        AudioSource source;
+
         private void Start () {
             m_buttonRef = GetComponent<NVRButton> ();
+            source = GetComponent<AudioSource> ();
             down = false;
             up = false;
         }
@@ -37,6 +45,7 @@ namespace WW.Helpers {
             }
             if (m_buttonRef.ButtonUp) {
                 m_whileButtonUp.Invoke ();
+                oneShotClip = false;
                 up = true;
             }
         }
@@ -49,7 +58,15 @@ namespace WW.Helpers {
 
             if (m_buttonRef.ButtonDown && up) {
                 m_onButtonDown.Invoke ();
+                oneShotClip = false;
                 up = false;
+            }
+        }
+
+        public void PlayOneShotClip(AudioClip clip) {
+            if(!oneShotClip) {
+                source.PlayOneShot (clip);
+                oneShotClip = true;
             }
         }
     }

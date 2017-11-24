@@ -15,18 +15,14 @@ namespace WW.Movement {
         public TeleportVive m_teleRef;
         public GameObject m_infoText;
 
-        private void OnTriggerEnter ( Collider a_other ) {
-            if(a_other.tag == "ShowFloor") {
-                AudioManager.Instance.PlayVoiceLine (14);
-            }
-        }
 
         private void OnTriggerStay ( Collider a_other ) {
             if (a_other.tag != "MainCamera" &&
                 a_other.tag != "Player" &&
                 a_other.tag != "CigarPoint" &&
                 a_other.tag != "FacialFeature" &&
-                a_other.tag != "ShowFloor") {
+                a_other.tag != "ShowFloor" &&
+                a_other.tag != "StageQuiz") {
                 m_isClipping = true;
                 m_teleRef.CanTeleport = false;
                 m_infoText.SetActive (true);

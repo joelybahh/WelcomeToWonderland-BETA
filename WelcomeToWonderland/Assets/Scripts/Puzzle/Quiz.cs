@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using WW.Managers;
 namespace WW.Puzzles {
     public class Quiz : Puzzle  {
 
@@ -14,9 +14,11 @@ namespace WW.Puzzles {
         int m_currentQuestion = 0;
         int maxQuestions;
         bool canAnswer = false;
-
-
+        float timer = 5.0f;
+        bool countdownstart = false;
+        int voicelines = 19;
         public void StartQuiz( ) {
+            countdownstart = true;
             maxQuestions = PuzzleQuestions.Count - 1;
             foreach ( var screen in Screens ) {
                 screen.m_on.Invoke();
@@ -32,7 +34,7 @@ namespace WW.Puzzles {
                     if ( m_currentQuestion <= maxQuestions ) m_currentQuestion += 1;
                     else if ( m_currentQuestion > maxQuestions ) m_completed = true;
                     ChangeScreenText(m_currentQuestion);
-
+                    AudioManager.Instance.PlayVoiceLine (voicelines += 3 );
                 }
             }
         }
@@ -40,11 +42,14 @@ namespace WW.Puzzles {
         public bool CheckAnswer(int aInt) {
             canAnswer = false;
             if ( aInt == PuzzleAnswers[m_currentQuestion] ) {
-
+                AudioManager.Instance.PlayVoiceLine (voicelines + 2);
+                
                 return true;
             }
             else {
                 StartCoroutine(IncorrectAnswer(10));
+                AudioManager.Instance.PlayVoiceLine (voicelines + 1);
+
                 return false;
             }
         }
@@ -75,6 +80,17 @@ namespace WW.Puzzles {
         IEnumerator WaitToAnswer(int secs) {
             yield return new WaitForSeconds(secs);
             canAnswer = true;
+        }
+
+        private void Update () {
+            if (countdownstart) {
+                timer -= Time.deltaTime;
+            }
+
+            if(timer <= 0) {
+                /// EXPLOSIONS
+            }
+
         }
 
     }

@@ -12,9 +12,20 @@ namespace WW.Managers
     /// </summary>
     public class TimeManager : MonoBehaviour
     {
-        public static TimeManager Instance;      
+        public static TimeManager Instance;
 
-        [SerializeField] private float m_minutes = 1, m_seconds = 0;
+        [SerializeField] private float m_minutes;
+        public float Minutes {
+            get {
+                return m_minutes;
+            }
+        }
+        [SerializeField] private float m_seconds;
+        public float Seconds {
+            get {
+                return m_seconds;
+            }
+        }
         [SerializeField] private Text m_display;
         [SerializeField] private List<Text> m_largeScreens = new List<Text>();
 
