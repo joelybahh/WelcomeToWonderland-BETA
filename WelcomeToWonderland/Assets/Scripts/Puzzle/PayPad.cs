@@ -19,12 +19,18 @@ namespace WW.Puzzles {
         [SerializeField] private GameObject m_invalidSwipeRef;
         [SerializeField] private GameObject m_defaultTextRef;
 
+
+        [Header ("Sound Effects")]
+        [SerializeField] private AudioSource m_source;
+        [SerializeField] private AudioClip m_beepCorrect;
+        [SerializeField] private AudioClip m_beepIncorrect;
         #endregion
 
         #region Private Variables
 
         private eCurText m_curText;
-
+        private bool playOnceCorrect = false;
+        private bool playOnceIncorrect = false;
         #endregion
 
         #region Unity Methods
@@ -88,6 +94,7 @@ namespace WW.Puzzles {
                     m_accessGrantedRef.SetActive (false);
                     m_accessDeniedRef.SetActive (false);
                     m_invalidSwipeRef.SetActive (false);
+                    playOnceIncorrect = false;
                     break;
                 case eCurText.DENIED:
                     m_invalidSwipeRef.SetActive (false);
@@ -96,12 +103,20 @@ namespace WW.Puzzles {
                     m_defaultTextRef.SetActive (false);
                     break;
                 case eCurText.GRANTED:
+                    if(!playOnceCorrect) {
+                        m_source.PlayOneShot (m_beepCorrect);
+                        playOnceCorrect = true;
+                    }
                     m_invalidSwipeRef.SetActive (false);
                     m_accessGrantedRef.SetActive (true);
                     m_accessDeniedRef.SetActive (false);
                     m_defaultTextRef.SetActive (false);
                     break;
                 case eCurText.INVALID:
+                    if (!playOnceIncorrect) {
+                        m_source.PlayOneShot (m_beepIncorrect);
+                        playOnceIncorrect = true;
+                    }
                     m_invalidSwipeRef.SetActive (true);
                     m_accessGrantedRef.SetActive (false);
                     m_accessDeniedRef.SetActive (false);

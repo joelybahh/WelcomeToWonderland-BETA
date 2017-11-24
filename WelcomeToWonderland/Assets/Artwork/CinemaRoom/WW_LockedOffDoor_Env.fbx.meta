@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: b80e1906341c452459aafe8bdb9171f7
+timeCreated: 1511477466
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Chain
+    100002: Chain 1
+    100004: Chain 2
+    100006: Chain1
+    100008: Chain10
+    100010: Chain11
+    100012: Chain12
+    100014: Chain13
+    100016: Chain14
+    100018: Chain15
+    100020: Chain16
+    100022: Chain17
+    100024: Chain18
+    100026: Chain19
+    100028: Chain2
+    100030: Chain20
+    100032: Chain21
+    100034: Chain22
+    100036: Chain23
+    100038: Chain24
+    100040: Chain25
+    100042: Chain26
+    100044: Chain27
+    100046: Chain28
+    100048: Chain29
+    100050: Chain3
+    100052: Chain30
+    100054: Chain31
+    100056: Chain32
+    100058: Chain33
+    100060: Chain34
+    100062: Chain35
+    100064: Chain36
+    100066: Chain37
+    100068: Chain38
+    100070: Chain39
+    100072: Chain4
+    100074: Chain5
+    100076: Chain6
+    100078: Chain7
+    100080: Chain8
+    100082: Chain9
+    100084: Lock
+    100086: lock
+    100088: lockbase
+    100090: //RootNode
+    400000: Chain
+    400002: Chain 1
+    400004: Chain 2
+    400006: Chain1
+    400008: Chain10
+    400010: Chain11
+    400012: Chain12
+    400014: Chain13
+    400016: Chain14
+    400018: Chain15
+    400020: Chain16
+    400022: Chain17
+    400024: Chain18
+    400026: Chain19
+    400028: Chain2
+    400030: Chain20
+    400032: Chain21
+    400034: Chain22
+    400036: Chain23
+    400038: Chain24
+    400040: Chain25
+    400042: Chain26
+    400044: Chain27
+    400046: Chain28
+    400048: Chain29
+    400050: Chain3
+    400052: Chain30
+    400054: Chain31
+    400056: Chain32
+    400058: Chain33
+    400060: Chain34
+    400062: Chain35
+    400064: Chain36
+    400066: Chain37
+    400068: Chain38
+    400070: Chain39
+    400072: Chain4
+    400074: Chain5
+    400076: Chain6
+    400078: Chain7
+    400080: Chain8
+    400082: Chain9
+    400084: Lock
+    400086: lock
+    400088: lockbase
+    400090: //RootNode
+    2300000: Chain 1
+    2300002: Chain 2
+    2300004: Chain1
+    2300006: Chain10
+    2300008: Chain11
+    2300010: Chain12
+    2300012: Chain13
+    2300014: Chain14
+    2300016: Chain15
+    2300018: Chain16
+    2300020: Chain17
+    2300022: Chain18
+    2300024: Chain2
+    2300026: Chain20
+    2300028: Chain21
+    2300030: Chain22
+    2300032: Chain23
+    2300034: Chain24
+    2300036: Chain25
+    2300038: Chain26
+    2300040: Chain27
+    2300042: Chain28
+    2300044: Chain29
+    2300046: Chain3
+    2300048: Chain30
+    2300050: Chain31
+    2300052: Chain32
+    2300054: Chain33
+    2300056: Chain34
+    2300058: Chain35
+    2300060: Chain36
+    2300062: Chain37
+    2300064: Chain38
+    2300066: Chain39
+    2300068: Chain4
+    2300070: Chain5
+    2300072: Chain6
+    2300074: Chain7
+    2300076: Chain8
+    2300078: Chain9
+    2300080: lock
+    2300082: lockbase
+    3300000: Chain 1
+    3300002: Chain 2
+    3300004: Chain1
+    3300006: Chain10
+    3300008: Chain11
+    3300010: Chain12
+    3300012: Chain13
+    3300014: Chain14
+    3300016: Chain15
+    3300018: Chain16
+    3300020: Chain17
+    3300022: Chain18
+    3300024: Chain2
+    3300026: Chain20
+    3300028: Chain21
+    3300030: Chain22
+    3300032: Chain23
+    3300034: Chain24
+    3300036: Chain25
+    3300038: Chain26
+    3300040: Chain27
+    3300042: Chain28
+    3300044: Chain29
+    3300046: Chain3
+    3300048: Chain30
+    3300050: Chain31
+    3300052: Chain32
+    3300054: Chain33
+    3300056: Chain34
+    3300058: Chain35
+    3300060: Chain36
+    3300062: Chain37
+    3300064: Chain38
+    3300066: Chain39
+    3300068: Chain4
+    3300070: Chain5
+    3300072: Chain6
+    3300074: Chain7
+    3300076: Chain8
+    3300078: Chain9
+    3300080: lock
+    3300082: lockbase
+    4300000: Chain
+    4300002: Chain20
+    4300004: Chain21
+    4300006: Chain22
+    4300008: Chain23
+    4300010: Chain24
+    4300012: Chain25
+    4300014: Chain26
+    4300016: Chain27
+    4300018: Chain28
+    4300020: Chain29
+    4300022: Chain30
+    4300024: Chain31
+    4300026: Chain32
+    4300028: Chain33
+    4300030: Chain34
+    4300032: Chain35
+    4300034: Chain36
+    4300036: Chain37
+    4300038: Chain38
+    4300040: Chain39
+    4300042: Chain
+    4300044: Chain1
+    4300046: Chain2
+    4300048: Chain3
+    4300050: Chain4
+    4300052: Chain5
+    4300054: Chain6
+    4300056: Chain7
+    4300058: Chain8
+    4300060: Chain9
+    4300062: Chain10
+    4300064: Chain11
+    4300066: Chain12
+    4300068: Chain13
+    4300070: Chain14
+    4300072: Chain15
+    4300074: Chain16
+    4300076: Chain17
+    4300078: Chain18
+    4300080: lockbase
+    4300082: lock
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

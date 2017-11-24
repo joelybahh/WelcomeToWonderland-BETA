@@ -27,6 +27,11 @@ namespace WW.Managers {
         [SerializeField] private UnityEvent m_onOpenMalButtonDown;
         [SerializeField] private UnityEvent m_onCloseMalButtonDown;
 
+        [SerializeField] private AudioClip m_creaking;
+        [SerializeField] private AudioSource m_source;
+
+        bool hasPlayed = false;
+
         private static bool m_hasMalfunctioned = false;
         private bool isStopped = false;
 
@@ -51,9 +56,13 @@ namespace WW.Managers {
 
             if (m_emergencyButton.ButtonDown) {
                 m_onEmergMalButtonDown.Invoke ();
-                m_hasMalfunctioned = true;
+                m_hasMalfunctioned = true;               
             }
             if (m_openDoorsButton.ButtonDown || m_openDoorsButton.ButtonIsPushed) {
+                if (!hasPlayed) {
+                    m_source.PlayOneShot (m_creaking);
+                    hasPlayed = true;
+                }
                 m_onOpenMalButtonDown.Invoke ();
             }
             if (m_closeDoorsButton.ButtonDown || m_closeDoorsButton.ButtonIsPushed) {

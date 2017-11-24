@@ -4,7 +4,7 @@ using UnityEngine;
 namespace WW.Puzzles {
     public class SeatButtonPuzzle : Puzzle {
        public List<NewtonVR.NVRButton> buttons;
-        
+       
 
 
         // Update is called once per frame
@@ -13,8 +13,12 @@ namespace WW.Puzzles {
             foreach ( var b in buttons ) {
                 if ( !b.ButtonIsPushed ) m_completed = false; 
             }
-            if ( m_completed ) CompletePuzzle();
-
+            if (m_completed) {
+                
+                CompletePuzzle ();
+            }
         }
+
+        
     }
 }
