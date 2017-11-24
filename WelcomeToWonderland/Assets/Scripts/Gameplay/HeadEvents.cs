@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using WW.Managers;
 using WW.Puzzles;
+//using SceneManagement;
+
 public class HeadEvents : MonoBehaviour {
 
     [SerializeField] TimeManager Quiz;
@@ -17,6 +19,9 @@ public class HeadEvents : MonoBehaviour {
         if (a_other.tag == "StageQuiz") {
             AudioManager.Instance.PlayVoiceLine (18);
             StartCoroutine (delay (47));
+        }
+        if (a_other.tag == "END") {
+            Application.Quit ();
         }
     }
 
