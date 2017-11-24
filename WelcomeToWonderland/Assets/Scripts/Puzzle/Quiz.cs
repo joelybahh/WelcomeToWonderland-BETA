@@ -41,14 +41,14 @@ namespace WW.Puzzles {
 
         public bool CheckAnswer(int aInt) {
             canAnswer = false;
+            if (m_currentQuestion == 8) return true;
             if ( aInt == PuzzleAnswers[m_currentQuestion] ) {
                 AudioManager.Instance.PlayVoiceLine (voicelines + 2);
                 
                 return true;
             }
             else {
-                StartCoroutine(IncorrectAnswer(10));
-                AudioManager.Instance.PlayVoiceLine (voicelines + 1);
+                StartCoroutine(IncorrectAnswer(5));
 
                 return false;
             }
@@ -58,7 +58,7 @@ namespace WW.Puzzles {
             foreach ( var t in QuizTexts ) {
                 t.text = PuzzleQuestions[aInt];
             }
-            StartCoroutine(WaitToAnswer(3));
+            StartCoroutine (WaitToAnswer(3));
         }
 
         public bool CanAnswer( ) {
@@ -69,6 +69,8 @@ namespace WW.Puzzles {
             foreach ( var s in Screens ) {
                 s.m_off.Invoke();
             }
+            AudioManager.Instance.PlayVoiceLine (voicelines + 1);
+
             yield return new WaitForSeconds(secs);
 
             foreach ( var s in Screens ) {
@@ -90,6 +92,8 @@ namespace WW.Puzzles {
             if(timer <= 0) {
                 /// EXPLOSIONS
             }
+
+            if (m_currentQuestion == 8) CompletePuzzle();
 
         }
 

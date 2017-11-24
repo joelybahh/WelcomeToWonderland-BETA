@@ -25,8 +25,8 @@ public class HeadEvents : MonoBehaviour {
         yield return new WaitForSeconds(delay);
         AudioManager.Instance.PlayVoiceLine (19);
 
-        Quiz.enabled = true;
-        GameTimer.enabled = false;
+        Quiz.gameObject.SetActive (true);
+        GameTimer.gameObject.SetActive(false);
         QuizPuzzle.StartQuiz ();
 
 

@@ -56,15 +56,13 @@ namespace WW.Managers {
 
             if (m_emergencyButton.ButtonDown) {
                 m_onEmergMalButtonDown.Invoke ();
-                m_hasMalfunctioned = true;
-
-                if(!hasPlayed) {
+                m_hasMalfunctioned = true;               
+            }
+            if (m_openDoorsButton.ButtonDown || m_openDoorsButton.ButtonIsPushed) {
+                if (!hasPlayed) {
                     m_source.PlayOneShot (m_creaking);
                     hasPlayed = true;
                 }
-
-            }
-            if (m_openDoorsButton.ButtonDown || m_openDoorsButton.ButtonIsPushed) {
                 m_onOpenMalButtonDown.Invoke ();
             }
             if (m_closeDoorsButton.ButtonDown || m_closeDoorsButton.ButtonIsPushed) {
