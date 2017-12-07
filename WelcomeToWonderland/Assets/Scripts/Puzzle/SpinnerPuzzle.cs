@@ -66,20 +66,16 @@ namespace WW.Puzzles {
             if ( !m_poweredOn ) return;
             else if ( !m_hasInitialized && m_poweredOn ) InitializeRotations();
 
-            //if ( m_poweredOn ) {
-            //    m_redLight.enabled = true;
-            //    m_greenLight.enabled = true;
-            //    m_blueLight.enabled = true;
-            //}
-
             m_spinnerOuterRot = m_outerSpinner.CurrentAngle;
             m_spinnerMiddleRot = m_middleSpinner.CurrentAngle;
             m_spinnerCenterRot = m_centerSpinner.CurrentAngle;
 
             if (m_button != null) {
                 if (m_button.ButtonDown) {
-                    if (CheckPuzzle()) { CompletePuzzle(); SetVictoryColor(); }
-                    /*//else{ AudioManager.Instance.PlayVoiceLine(); }*/
+                    if (CheckPuzzle()) { 
+                        CompletePuzzle(); 
+                        SetVictoryColor(); 
+                    }
                 }
             }
         }
