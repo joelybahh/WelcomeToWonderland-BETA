@@ -60,10 +60,6 @@ namespace WW.AI {
         }
 
         void Update() {
-            //if (m_switch.m_switchState == true) {
-            //    m_agent.enabled = true;
-            //} else m_agent.enabled = false;
-
             if ( m_isStoppedAtEnd ) return;
             switch ( m_pathingBehaviour ) {
                 case ePathingBehaviour.LOOPING: UpdateLooping(); break;
